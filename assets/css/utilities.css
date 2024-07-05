@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+input,select {
+  padding: 0 1em 0 1em;
+}
+a{
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: underline;
+}
+button {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+}
+button:hover {
+  transform: scale(1.05);
+}
+.truck-bg{
+  width: 100%;
+  background: url("../images/general/truck-img.png");
+  background-size:cover;
+  height: 20em;
+  border-radius:10px;
+  color: #ffffff !important;
+}
