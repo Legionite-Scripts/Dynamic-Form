@@ -55,28 +55,6 @@
       <input type="password" placeholder="********" name="password" required />
     </div>
 
-    <div class="flexed-column mb-1 checklist">
-      <p>
-        <img src="@/assets/icons/check.png" alt="check" /> At least 8 characters
-      </p>
-      <p>
-        <img src="@/assets/icons/check.png" alt="check" />At least a spewcial
-        character
-      </p>
-      <p>
-        <img src="@/assets/icons/check.png" alt="check" />At least 1 numerical
-        character
-      </p>
-      <p>
-        <img src="@/assets/icons/check.png" alt="check" />At least 1 upper case
-        character
-      </p>
-      <p>
-        <img src="@/assets/icons/check.png" alt="check" />At least 1 lower case
-        character
-      </p>
-    </div>
-
     <div class="flexed-row center terms mb-3">
       <input type="checkbox" class="checkbox" name="terms" />&nbsp;
       <label for="terms">

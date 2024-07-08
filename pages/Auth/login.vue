@@ -1,7 +1,7 @@
 <template>
   <main class="flexed-row p-5">
     <div class="text-center flexed-column">
-      <h1 class="weight-7 mb-3">Zukonu.</h1>
+      <h1 class="weight-7 mb-3" style="color: #ffffff">Zukonu.</h1>
       <login-form />
     </div>
   </main>
@@ -19,6 +19,7 @@ main {
   background-size: cover;
   justify-content: right;
   overflow: hidden !important;
+  padding: 80px;
   @media (width<768px) {
     justify-content: center;
     padding: 0px !important;

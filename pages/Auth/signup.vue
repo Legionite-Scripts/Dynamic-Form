@@ -19,6 +19,7 @@ main {
   background-size: cover;
   justify-content: right;
   overflow-y: auto;
+  padding: 80px;
   @media (width<768px) {
     justify-content: center;
     padding:0px !important;
@@ -32,6 +33,7 @@ main > div {
   }
 }
 main > div > h1 {
+  color: #ffffff;
   @media (width<1000px) {
     display: none;
   }

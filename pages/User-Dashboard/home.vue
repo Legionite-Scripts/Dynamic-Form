@@ -6,7 +6,7 @@
         <h2 class="weight-6">Zukonu Fleet Owner</h2>
       </div>
 
-      <section class="overview flexed-column">
+      <section class="overview flexed-column mb-5">
         <div class="flexed-row">
           <h2 class="weight-5">Overview</h2>
 
@@ -55,6 +55,18 @@
               <p class="mb-2" style="color: #818180">+23481600000000</p>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section class="vehicle-management mb-5 flexed-column">
+        <h2 class="weight-5 mb-3" style="color: #131213">Vehicle Management</h2>
+        <div>
+         <track-vehicle/>
+         <track-vehicle/>
+         <track-vehicle/>
+
+         <track-vehicle/>
+         <track-vehicle/>
         </div>
       </section>
     </div>
@@ -143,4 +155,14 @@ section.overview > div > div > button {
   }
 }
 /*  */
+/* Vehicle Management */
+section.vehicle-management > div {
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  @media(width<1000px){
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 </style>
