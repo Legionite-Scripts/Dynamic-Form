@@ -1,5 +1,5 @@
 <template>
-  <main class="center p-2">
+  <main class="center p-4">
     <div class="container">
       <h1 class="weight-7 mb-3 text-center">Zukonu.</h1>
       <div class="flexed-column center p-3">
@@ -31,7 +31,7 @@ main {
   }
 }
 main > div.container {
-  width: 30%;
+  width: 20%;
   @media (width<1000px) {
     width: auto;
   }

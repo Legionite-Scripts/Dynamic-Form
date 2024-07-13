@@ -1,12 +1,13 @@
 <template>
-    <Profile />
+    <general />
 </template>
 
 <script>
-import Profile from "./Profile";
+import general from "./general.vue";
+
 export default {
     components: {
-        Profile,
+        general,
     },
 };
 </script>

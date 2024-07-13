@@ -1,7 +1,13 @@
 <template>
-  <nav class="p-2 pr-5 pl-5 flexed-row center">
-    <h2 class="weight-5">Zukonu Transporter</h2>
-    <img src="@/assets/images/general/hero.png" alt="Hero" />
+  <nav>
+    <main class="pt-2 pb-2 flexed-row center">
+      <h2 class="weight-5">Zukonu Transporter</h2>
+      <img
+        src="@/assets/images/general/hero.png"
+        alt="Hero"
+        class="border-round"
+      />
+    </main>
   </nav>
 </template>
 
@@ -12,16 +18,20 @@ export default {};
 <style scoped>
 nav {
   width: 100vw;
+  margin: 0 auto;
   background: #121212;
+}
+main {
+  width: 90%;
+  margin: 0 auto;
   color: #ffffff;
-  justify-content: space-between;
+  justify-content: space-between !important;
   flex-wrap: wrap;
-@media(width<1000px){
-  padding:20px;
+  @media (width<1000px) {
+    width: 95%;
+  }
 }
-}
-nav > img{
-  border-radius: 50%;
+nav > main > img {
   height: 3em;
 }
 </style>
