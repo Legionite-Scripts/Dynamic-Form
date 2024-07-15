@@ -1,5 +1,5 @@
 <template>
-  <main class="center p-4">
+  <section class="wrapper center p-4">
     <div class="container">
       <h1 class="weight-7 mb-3 text-center">Zukonu.</h1>
       <form class="flexed-column center p-3">
@@ -13,7 +13,7 @@
         <button class="p-1">Sign In</button>
       </form>
     </div>
-  </main>
+  </section>
 </template>
 
 <script>
@@ -23,22 +23,21 @@ export default {
 </script>
 
 <style scoped>
-main {
+section.wrapper {
   height: 100vh;
   width: 100vw;
-  background: #f9f9f8;
   background-size: cover;
   @media (width<1000px) {
    padding: 10px;
   }
 }
-main > div.container {
+section.wrapper > div.container {
   width: 30%;
   @media (width<1000px) {
     width: auto;
   }
 }
-main > div.container > form {
+section.wrapper > div.container > form {
   background: #ffffff;
 }
 form > div {

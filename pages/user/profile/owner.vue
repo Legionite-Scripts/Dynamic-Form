@@ -1,7 +1,7 @@
 <template>
-  <main>
+  <section class="wrapper">
     <Navbar />
-    <section class="container">
+    <main>
       <div class="flexed-row center mb-4">
         <h2 class="weight-5">My Profile</h2>
 
@@ -27,8 +27,8 @@
           </p>
 
           <div class="flexed-row">
-            <button>Chat Merchant</button>
-            <button>Dial Number</button>
+            <button>Update Profile</button>
+            <button>Delete Account</button>
           </div>
         </div>
       </div>
@@ -36,27 +36,27 @@
       <div class="product-catalogue">
         <h2 class="weight-5 mb-4">Product Catalogue</h2>
         <div>
-          <productCatalogue v-for="n in 12" :key="n" />
+          <product-catalogue v-for="n in 10" :key="n" />
         </div>
       </div>
-    </section>
-  </main>
+    </main>
+  </section>
 </template>
 
 <script setup>
-import productCatalogue from "@/components/User-Dashboard/product-catalogue.vue";
+import productCatalogue from "@/components/user/product-catalogue.vue";
 </script>
 
 <style scoped>
 * {
   overflow-x: hidden;
 }
-main {
+section.wrapper {
   width: 100%;
+  overflow-y: auto;
   margin: 0 auto;
-  background-color: #f2f2f2;
 }
-.container {
+main {
   width: 90%;
   margin: 0 auto;
   margin-top: 50px;
@@ -64,17 +64,17 @@ main {
     width: 95%;
   }
 }
-.container > div:first-child {
+main > div:first-child {
   justify-content: space-between;
   flex-wrap: wrap;
   @media (width<1000px) {
     gap: 10px;
   }
 }
-.container > div > div {
+main > div > div {
   gap: 20px;
 }
-.container > .profile-main {
+main > .profile-main {
   padding: 32px;
   gap: 32px;
   border-radius: 8px;
@@ -101,7 +101,10 @@ main {
   border: 0.5px solid rgba(0, 0, 0, 0.1);
   padding: 8px 16px;
   background: none;
-
+}
+.profile-main > div > div > button:nth-of-type(2) {
+  background-color: #ff3d22;
+  color: #fefffe;
 }
 .product-catalogue > div {
   display: grid;

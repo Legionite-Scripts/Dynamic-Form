@@ -1,7 +1,7 @@
 <template>
-  <main>
+  <section class="wrapper">
     <Navbar />
-    <section class="container">
+    <main class="mt-5">
       <div class="flexed-row center mb-4">
         <h2 class="weight-5">Address Management</h2>
 
@@ -81,8 +81,8 @@
           </div>
         </section>
       </form>
-    </section>
-  </main>
+    </main>
+  </section>
 </template>
 
 <script setup>
@@ -103,24 +103,13 @@ const options = [
 hr {
   border: 0.5px solid #c9c8c9;
 }
-main {
+section.wrapper {
   width: 100%;
   height: 100vh;
   margin: 0 auto;
-  background-color: #f2f2f2;
 }
 
-.container {
-  width: 90%;
-  margin: 0 auto;
-  margin-top: 50px;
-
-  @media (width< 1000px) {
-    width: 95%;
-  }
-}
-
-.container > div:first-child {
+main > div:first-child {
   justify-content: space-between;
   flex-wrap: wrap;
 
@@ -129,11 +118,11 @@ main {
   }
 }
 
-.container > div > div {
+main > div > div {
   gap: 20px;
 }
 
-.container > .profile-main {
+main > .profile-main {
   padding: 32px;
   gap: 32px;
   border-radius: 8px;

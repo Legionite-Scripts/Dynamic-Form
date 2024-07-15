@@ -1,10 +1,10 @@
 <template>
-  <main class="center p-4">
+  <section class="wrapper center p-4">
     <div class="container">
       <h1 class="weight-7 mb-3 text-center">Zukonu.</h1>
       <resetPasswordForm />
     </div>
-  </main>
+  </section>
 </template>
 
 <script setup>
@@ -12,22 +12,22 @@ import resetPasswordForm from "@/components/Auth/reset-password-form.vue";
 </script>
 
 <style scoped>
-main {
+section.wrapper {
   height: 100vh;
   width: 100vw;
-  background: #f9f9f8;
+  /* background: #f9f9f8; */
   background-size: cover;
   @media (width<1000px) {
     padding: 10px !important;
   }
 }
-main > div.container {
+section.wrapper > div.container {
   width: 35%;
   @media (width<1000px) {
     width: 100%;
   }
 }
-main > div.container > form {
+section.wrapper > div.container > form {
   background: #ffffff;
 }
 form > div {

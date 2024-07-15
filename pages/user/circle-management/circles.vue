@@ -1,7 +1,7 @@
 <template>
-  <main>
+  <section class="wrapper">
     <Navbar />
-    <div class="container">
+    <main class="container">
       <!--  -->
 
       <div class="bg center p-5 mb-5 mt-5">
@@ -27,12 +27,12 @@
         </div>
       </div>
       <!--  -->
-    </div>
-  </main>
+    </main>
+  </section>
 </template>
 
 <script setup>
-import circleComponent from "@/components/User-Dashboard/circle.vue";
+import circleComponent from "@/components/user/circle.vue";
 </script>
 
 <style scoped>
@@ -45,21 +45,11 @@ p a {
   color: #2a6fc3;
 }
 
-main {
+section.wrapper {
   width: 100%;
   height: 100vh;
   overflow-y: auto;
   margin: 0 auto;
-  background-color: #f2f2f2;
-}
-
-.container {
-  width: 90%;
-  margin: 0 auto;
-
-  @media (width< 1000px) {
-    width: 95%;
-  }
 }
 
 /*  */
