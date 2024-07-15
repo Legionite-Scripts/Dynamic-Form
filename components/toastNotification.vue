@@ -118,35 +118,43 @@ onBeforeUnmount(() => clearInterval(timerInterval));
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   transition: opacity 0.3s ease, transform 0.3s ease;
 
-  @media(width<1000px){
+  @media(width<1000px) {
     width: 40% !important;
   }
 }
+
 .toast--success {
   background-color: #dff0d8;
   color: #3c763d;
 }
+
 .toast--success p {
   color: #3c763d;
 }
+
 .toast--error {
   background-color: #f2dede;
   color: #a94442;
 }
+
 .toast--error p {
   color: #a94442;
 }
+
 .toast--warning {
   background-color: #fcf8e3;
   color: #8a6d3b;
 }
+
 .toast--warning p {
   color: #8a6d3b;
 }
+
 .toast--info {
   background-color: #d9edf7;
   color: #31708f;
 }
+
 .toast--info p {
   color: #31708f;
 }

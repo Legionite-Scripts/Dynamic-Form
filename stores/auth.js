@@ -14,7 +14,7 @@ export const useAuthStore = defineStore('auth', {
     },
     async signup(form) {
       try {
-        const response = await axios.post('http://54.196.246.58:8002/api/v1/auth/signup', form);
+        const response = await axios.post('https://api.zukonu.xyz/api/v1/auth/signup', form);
         this.user = response.data;
         this.error = null;
       } catch (error) {
@@ -23,7 +23,7 @@ export const useAuthStore = defineStore('auth', {
     },
     async login(credentials) {
       try {
-        const response = await axios.post('http://54.196.246.58:8002/api/v1/auth/login', credentials);
+        const response = await axios.post('https://api.zukonu.xyz/api/v1/auth/signup', credentials);
         this.user = response.data;
         this.error = null;
       } catch (error) {
