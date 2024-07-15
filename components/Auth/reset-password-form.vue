@@ -11,7 +11,7 @@
         <img src="@/assets/icons/check.png" alt="check" /> At least 8 characters
       </p>
       <p>
-        <img src="@/assets/icons/check.png" alt="check" />At least a spewcial
+        <img src="@/assets/icons/check.png" alt="check" />At least a special
         character
       </p>
       <p>

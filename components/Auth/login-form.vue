@@ -1,5 +1,5 @@
 <template>
-  <form class="p-3 flexed-column center">
+  <form class="p-4 flexed-column center" @submit.prevent="handleLogin">
     <h2 class="mb-3">Sign In</h2>
     <div class="flexed-column mb-1 fields">
       <label for="email" class="left flexed-row mb-1"
@@ -10,6 +10,7 @@
         name="email"
         class="mb-2"
         placeholder="Johndoe@gmail.com"
+        v-model="email"
         required
       />
 
@@ -21,18 +22,58 @@
         class="mb-1"
         placeholder="********"
         name="password"
+        v-model="password"
         required
       />
       <a href="#" class="right mb-2">Forgot Password?</a>
     </div>
 
-    <button class="p-2 mb-2">Sign In</button>
+    <button class="p-2 mb-2" type="submit">Sign In</button>
     <p class="mb-2">-OR-</p>
     <p>Don't have an account? <a href="#" class="weight-7">Sign Up</a></p>
   </form>
 </template>
 
-<script setup></script>
+<script setup>
+import { ref } from "vue";
+
+const email = ref("");
+const password = ref("");
+
+const handleLogin = async () => {
+  try {
+    const response = await fetch("http://54.196.246.58/api/v1/auth/login", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        email: email.value,
+        password: password.value,
+      }),
+    });
+
+    if (!response.ok) {
+      const errorData = await response.json();
+      console.error("Error:", errorData);
+
+      return;
+    }
+
+    const data = await response.json();
+    console.log("Success:", data);
+
+    // Save email and password to Pinia Store
+    authStore.setEmail(email.value);
+    authStore.setPassword(password.value);
+
+    // Redirect to the Dashboard after successful Login
+    // router.push("/Dashboard");
+  } catch (err) {
+    console.error("Unexpected error:", err);
+  }
+};
+</script>
 <style scoped>
 * {
   color: #1e1e1e;
