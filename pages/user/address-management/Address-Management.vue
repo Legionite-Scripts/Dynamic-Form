@@ -100,9 +100,7 @@ const options = [
 * {
   overflow-x: hidden;
 }
-hr {
-  border: 0.5px solid #c9c8c9;
-}
+
 section.wrapper {
   width: 100%;
   height: 100vh;
