@@ -18,23 +18,23 @@
 
 <script setup>
 import { ref, onMounted, watch, onBeforeUnmount } from "vue";
-import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
-import { library } from "@fortawesome/fontawesome-svg-core";
-import {
-  faCheckCircle,
-  faExclamationCircle,
-  faTimesCircle,
-  faInfoCircle,
-  faTimes,
-} from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+// import { library } from "@fortawesome/fontawesome-svg-core";
+// import {
+//   faCheckCircle,
+//   faExclamationCircle,
+//   faTimesCircle,
+//   faInfoCircle,
+//   faTimes,
+// } from "@fortawesome/free-solid-svg-icons";
 
-library.add(
-  faCheckCircle,
-  faExclamationCircle,
-  faTimesCircle,
-  faInfoCircle,
-  faTimes
-);
+// library.add(
+//   faCheckCircle,
+//   faExclamationCircle,
+//   faTimesCircle,
+//   faInfoCircle,
+//   faTimes
+// );
 
 const props = defineProps({
   type: {
