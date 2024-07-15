@@ -1,5 +1,5 @@
 <template>
-  <main>
+  <section class="wrapper">
     <Navbar />
     <div class="container">
       <div class="mt-5 mb-3 flexed-column">
@@ -89,11 +89,11 @@
         </div>
       </div>
     </div>
-  </main>
+  </section>
 </template>
 
 <script setup>
-import circleComponent from "@/components/User-Dashboard/circle.vue";
+import circleComponent from "@/components/user/circle.vue";
 
 const currentLocation = ref("");
 const destination = ref("");

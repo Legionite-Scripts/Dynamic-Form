@@ -1,5 +1,5 @@
 <template>
-  <main>
+  <section class="wrapper">
     <Navbar />
     <section class="container">
       <div class="flexed-row center mb-4">
@@ -40,21 +40,20 @@
         </div>
       </div>
     </section>
-  </main>
+  </section>
 </template>
 
 <script setup>
-import productCatalogue from "@/components/User-Dashboard/product-catalogue.vue";
+import productCatalogue from "@/components/user/product-catalogue.vue";
 </script>
 
 <style scoped>
 * {
   overflow-x: hidden;
 }
-main {
+section.wrapper {
   width: 100%;
   margin: 0 auto;
-  background-color: #f2f2f2;
 }
 .container {
   width: 90%;

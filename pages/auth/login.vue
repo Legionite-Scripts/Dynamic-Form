@@ -1,10 +1,10 @@
 <template>
-  <main class="flexed-row">
+  <section class="wrapper flexed-row">
     <div class="text-center flexed-column">
       <h1 class="weight-7 mb-3" style="color: #ffffff">Zukonu.</h1>
       <loginForm />
     </div>
-  </main>
+  </section>
 </template>
 
 <script setup>
@@ -12,7 +12,7 @@ import loginForm from "@/components/Auth/login-form.vue";
 </script>
 
 <style scoped>
-main {
+section.wrapper {
   height: 100vh;
   width: 100vw;
   background: url("@/assets/images/Auth/login.png");
@@ -20,7 +20,7 @@ main {
   justify-content: right;
   overflow: hidden !important;
 }
-main > div {
+section.wrapper > div {
   width: 35%;
   height: 100vh !important;
   justify-content: center;
@@ -30,7 +30,7 @@ main > div {
     margin: 0px;
   }
 }
-main > div > h1 {
+section.wrapper > div > h1 {
   @media (width<1000px) {
     display: none;
   }

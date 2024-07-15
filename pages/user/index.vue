@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import Profile from "./Profile";
+import Profile from "./profile";
 export default {
     components: {
         Profile,

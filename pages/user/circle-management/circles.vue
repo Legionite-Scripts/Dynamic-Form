@@ -1,5 +1,5 @@
 <template>
-  <main>
+  <section class="wrapper">
     <Navbar />
     <div class="container">
       <!--  -->
@@ -28,11 +28,11 @@
       </div>
       <!--  -->
     </div>
-  </main>
+  </section>
 </template>
 
 <script setup>
-import circleComponent from "@/components/User-Dashboard/circle.vue";
+import circleComponent from "@/components/user/circle.vue";
 </script>
 
 <style scoped>
@@ -45,12 +45,11 @@ p a {
   color: #2a6fc3;
 }
 
-main {
+section.wrapper {
   width: 100%;
   height: 100vh;
   overflow-y: auto;
   margin: 0 auto;
-  background-color: #f2f2f2;
 }
 
 .container {

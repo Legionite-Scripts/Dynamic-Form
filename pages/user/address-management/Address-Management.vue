@@ -1,5 +1,5 @@
 <template>
-  <main>
+  <section class="wrapper">
     <Navbar />
     <section class="container">
       <div class="flexed-row center mb-4">
@@ -82,7 +82,7 @@
         </section>
       </form>
     </section>
-  </main>
+  </section>
 </template>
 
 <script setup>
@@ -103,11 +103,10 @@ const options = [
 hr {
   border: 0.5px solid #c9c8c9;
 }
-main {
+section.wrapper {
   width: 100%;
   height: 100vh;
   margin: 0 auto;
-  background-color: #f2f2f2;
 }
 
 .container {
