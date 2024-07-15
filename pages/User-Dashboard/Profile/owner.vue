@@ -47,7 +47,9 @@
     </main>
 </template>
 
-<script></script>
+<script setup>
+import productCatalogueComponent from "@/components/User-Dashboard/product-catalogue-component.vue";
+</script>
 
 <style scoped>
 * {
@@ -113,6 +115,7 @@ main {
 .product-catalogue > div {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
     @media (max-width: 1200px) {
         grid-template-columns: repeat(3, 1fr);
     }

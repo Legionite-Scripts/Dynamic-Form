@@ -2,13 +2,13 @@
   <main class="flexed-row">
     <div class="text-center flexed-column">
       <h1 class="weight-7 mb-3" style="color: #ffffff">Zukonu.</h1>
-      <login-form />
+      <loginForm />
     </div>
   </main>
 </template>
 
-<script>
-export default {};
+<script setup>
+import loginForm from "@/components/Auth/login-form.vue";
 </script>
 
 <style scoped>

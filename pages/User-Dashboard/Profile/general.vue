@@ -36,14 +36,16 @@
       <div class="product-catalogue">
         <h2 class="weight-5 mb-4">Product Catalogue</h2>
         <div>
-          <product-catalogue-component v-for="n in 12" :key="n" />
+          <productCatalogueComponent v-for="n in 12" :key="n" />
         </div>
       </div>
     </section>
   </main>
 </template>
 
-<script></script>
+<script setup>
+import productCatalogueComponent from "@/components/User-Dashboard/product-catalogue-component.vue";
+</script>
 
 <style scoped>
 * {
@@ -97,20 +99,22 @@ main {
 .profile-main > div > div > button {
   border-radius: 2px;
   border: 0.5px solid rgba(0, 0, 0, 0.1);
-  padding:8px 16px;
+  padding: 8px 16px;
   background: none;
+
 }
 .product-catalogue > div {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);  
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
   @media (max-width: 1200px) {
     grid-template-columns: repeat(3, 1fr);
   }
-  
+
   @media (max-width: 900px) {
     grid-template-columns: repeat(2, 1fr);
   }
-  
+
   @media (max-width: 600px) {
     grid-template-columns: repeat(1, 1fr);
   }

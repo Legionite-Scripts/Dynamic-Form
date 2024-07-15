@@ -2,15 +2,13 @@
   <main class="center p-4">
     <div class="container">
       <h1 class="weight-7 mb-3 text-center">Zukonu.</h1>
-      <reset-password-form />
+      <resetPasswordForm />
     </div>
   </main>
 </template>
 
-<script>
-export default {
-  setup() {},
-};
+<script setup>
+import resetPasswordForm from "@/components/Auth/reset-password-form.vue";
 </script>
 
 <style scoped>

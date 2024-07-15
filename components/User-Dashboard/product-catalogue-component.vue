@@ -1,9 +1,9 @@
 <template>
   <main class="flexed-column">
     <div class="mb-1">
-      <p>
+      <p class="flexed-row">
         <img
-          src="../assets/icons/User-Dashboard/store-outline-icon.svg"
+          src="@/assets/icons/User-Dashboard/store-outline-icon.svg"
           alt="Store Icon"
         />
         Papa Joe's Store
@@ -22,7 +22,7 @@
       </div>
 
       <div class="mb-2">
-        <p>
+        <p class="weight-4">
           Work with anyone, anywhere, in real time with web versions of
           productivity apps
         </p>
@@ -52,6 +52,7 @@ main {
   background: #fff;
   box-shadow: 0px 6.181px 12.361px 0px rgba(0, 0, 0, 0.04);
   padding-bottom: 16px;
+  height: auto !important;
 }
 main h3 {
   color: #131312;

@@ -2,13 +2,13 @@
   <main class="flexed-row">
     <div class="text-center center">
       <h1 class="weight-7 mb-3">Zukonu.</h1>
-      <signup-form />
+      <signupForm />
     </div>
   </main>
 </template>
 
-<script>
-export default {};
+<script setup>
+import signupForm from "@/components/Auth/signup-form.vue";
 </script>
 
 <style scoped>

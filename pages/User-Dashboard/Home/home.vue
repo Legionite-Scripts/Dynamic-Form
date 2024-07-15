@@ -13,9 +13,10 @@
           <button>Find Circle</button>
         </div>
       </div>
+
       <!--  -->
 
-      <div class="bg center p-5">
+      <div class="bg center p-5 mb-5">
         <h2 class="weight-6 mb-2">Start Shipping Your Products</h2>
 
         <section class="flexed-row">
@@ -50,11 +51,50 @@
           <button>Find Circle</button>
         </section>
       </div>
+      <!--  -->
+      <div class="circles mb-4">
+        <h2 class="weight-5 mb-4">Circles Based On Your Location</h2>
+
+        <div>
+          <circleComponent v-for="n in 12" :key="n" />
+        </div>
+      </div>
+      <!--  -->
+
+      <div class="bottom mb-5 flexed-row">
+        <div class="flexed-row center">
+          <div>
+            <h2 class="mb-1 weight-5">Understanding Zukonu Transport System</h2>
+            <p class="mb-2 weight-3">
+              Lorem ipsum dolor sit amet consectetur. Enim faucibus nunc erat
+              ac. Ut duis.
+            </p>
+            <a href="#">Learn</a>
+          </div>
+
+          <img src="@/assets/images/User-Dashboard/filler-img.png" alt="" />
+        </div>
+
+        <div class="flexed-row center">
+          <div>
+            <h2 class="mb-1 weight-5">Understanding Zukonu Transport System</h2>
+            <p class="mb-2 weight-3">
+              Lorem ipsum dolor sit amet consectetur. Enim faucibus nunc erat
+              ac. Ut duis.
+            </p>
+            <a href="#">Learn</a>
+          </div>
+
+          <img src="@/assets/images/User-Dashboard/filler-img.png" alt="" />
+        </div>
+      </div>
     </div>
   </main>
 </template>
 
 <script setup>
+import circleComponent from "@/components/User-Dashboard/circle.vue";
+
 const currentLocation = ref("");
 const destination = ref("");
 
@@ -187,5 +227,44 @@ main {
   border-radius: 2px;
   background: #121212;
   color: #fff;
+}
+.circles > div {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+  @media (max-width: 1400px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media (max-width: 950px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 650px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.bottom {
+  gap: 32px;
+  @media (width<768px) {
+    flex-wrap: wrap;
+  }
+}
+.bottom > div {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  border: 1.582px solid rgba(0, 0, 0, 0.1);
+  background: #fff;
+  box-shadow: 0px 6.327px 12.655px 0px rgba(0, 0, 0, 0.04);
+  padding: 24px;
+
+  @media (width<768px) {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}
+.bottom a {
+  color: #2a6fc3;
 }
 </style>
