@@ -19,9 +19,10 @@
       <div class="bg center p-5 mb-5">
         <h2 class="weight-6 mb-2">Start Shipping Your Products</h2>
 
-        <section class="flexed-row">
-          <div class="flexed-column">
-            <label for="location" class="mb-1">From Location</label>
+        <form class="section">
+          <div class="container">
+          <div class="form-group">
+            <label for="location">From Location</label>
             <select v-model="currentLocation" name="currentLocation" required>
               <option value="">Lagos, Nigeria</option>
               <option
@@ -34,8 +35,8 @@
             </select>
           </div>
 
-          <div class="flexed-column">
-            <label for="location" class="mb-1">To Destination</label>
+          <div class="form-group">
+            <label for="location">To Destination</label>
             <select v-model="destination" name="currentLocation" required>
               <option value="">Accra, Ghana</option>
               <option
@@ -47,9 +48,16 @@
               </option>
             </select>
           </div>
-
+          
           <button>Find Circle</button>
-        </section>
+
+        </div>
+
+          
+          
+
+        </form>
+
       </div>
       <!--  -->
       <div class="circles mb-4">
@@ -166,11 +174,20 @@ main > div:nth-of-type(1) > div > button:last-child {
   background-size: cover;
 }
 
+.section {
+  width: 60%;
+
+  @media (max-width: 1000px) {
+    width: 90%
+  
+  }
+}
+
 .bg > h2 {
   color: #fffefe;
 }
 
-.bg > section {
+.bg > .section {
   border-radius: 8px;
   background: rgba(0, 0, 0, 0.2);
   padding: 32px;
@@ -178,29 +195,13 @@ main > div:nth-of-type(1) > div > button:last-child {
   flex-wrap: wrap;
 }
 
+
 .bg select {
-  height: 3em;
-  width: 20em;
-  padding: 8px 16px;
-  border-radius: 4px;
-  border: 0.5px solid rgba(0, 0, 0, 0.1);
   background-color: #fff !important;
-  box-shadow: 0px 6.327px 12.655px 0px rgba(0, 0, 0, 0.04);
 }
 
 .bg label {
   color: #fffefe;
-}
-
-.bg select {
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>')
-    no-repeat right center;
-  background-size: 20px 20px;
-  background-position: 98% center;
-  color: #3f3f3e;
 }
 
 .bg button {

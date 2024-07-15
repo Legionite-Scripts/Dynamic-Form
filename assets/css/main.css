@@ -194,11 +194,16 @@
   display: flex;
   flex-direction: row;
 }
+
 .flexed-column {
   display: flex;
   flex-direction: column;
 }
-select {
+
+.flexed-column > * {width: 100% !important}
+
+.flexed-column select {
+  min-width: 300px;
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -208,11 +213,14 @@ select {
   background-position: 98% center;
 }
 
+a {
+  text-decoration: none !important;
+}
 
 main {
   width: 90%;
   margin: 0 auto;
-
+  padding-bottom: 5em;
   @media (width < 1000px) {
     width: 95%;
   }

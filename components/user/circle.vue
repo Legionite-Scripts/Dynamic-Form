@@ -1,8 +1,8 @@
 <template>
-  <main class="flexed-column">
+  <section class="flexed-column">
     <div class="mb-1">
       <p class="flexed-row">
-        <img
+        <img class="store"
           src="@/assets/icons/User-Dashboard/store-outline-icon.svg"
           alt="Store Icon"
         />
@@ -53,35 +53,42 @@
 
       <button class="weight-6">Join Circle</button>
     </div>
-  </main>
+  </section>
 </template>
 
 <script></script>
 
 <style scoped>
-main {
+section {
   border-radius: 8px;
   border: 1.545px solid rgba(0, 0, 0, 0.1);
   background: #fff;
   box-shadow: 0px 6.181px 12.361px 0px rgba(0, 0, 0, 0.04);
   height: auto !important;
 }
-main > div:nth-of-type(1) > p {
+section > div:nth-of-type(1) > p {
   color: #ffffff !important;
 }
-main h3 {
+section h3 {
   color: #131312;
 }
-main p {
+section p {
   color: #3f3f3e;
 }
-main > .container {
+section > .container {
   padding: 16px;
 }
-main > .container > div {
+section > .container > div {
   flex-wrap: wrap;
 }
-main > div:nth-of-type(1) {
+
+.store {
+  width: 24px;
+  height: 24px
+}
+
+
+section > div:nth-of-type(1) {
   padding: 16px;
   height: 7em;
   background-size: cover;
@@ -92,15 +99,15 @@ main > div:nth-of-type(1) {
       rgba(0, 0, 0, 0.3) 100%
     )
 }
-main > div:nth-of-type(1) > p {
+section > div:nth-of-type(1) > p {
   color: white;
   z-index: 6;
 }
 
-main > .container div {
+section > .container div {
   gap: 20px;
 }
-main > .container div > p:last-child {
+section > .container div > p:last-child {
   color: #2b6ec3;
 }
 .container > button {

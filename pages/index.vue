@@ -1,13 +1,13 @@
 <template>
-    <userDashboard/>
+    <home/>
 </template>
 
 <script>
-import userDashboard from "./user"
+import home from "./home"
 
 export default{
     components:{
-        userDashboard,
+        home,
     }
 }
 </script>

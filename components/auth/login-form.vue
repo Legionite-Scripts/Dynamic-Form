@@ -1,5 +1,5 @@
 <template>
-  <form class="p-4 flexed-column center" @submit.prevent="handleLogin">
+    <form class="p-4 flexed-column center" @submit.prevent="handleLogin">
     <h2 class="mb-3">Sign In</h2>
     <div class="flexed-column mb-1 fields">
       <label for="email" class="left flexed-row mb-1"
@@ -47,37 +47,40 @@ const email = ref("");
 const password = ref("");
 
 const handleLogin = async () => {
-  try {
-    const response = await fetch("http://54.196.246.58/api/v1/auth/login", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        email: email.value,
-        password: password.value,
-      }),
-    });
+  // try {
+  //   const response = await fetch("http://54.196.246.58/api/v1/auth/login", {
+  //     method: "POST",
+  //     headers: {
+  //       "Content-Type": "application/json",
+  //     },
+  //     body: JSON.stringify({
+  //       email: email.value,
+  //       password: password.value,
+  //     }),
+  //   });
 
-    if (!response.ok) {
-      const errorData = await response.json();
-      console.error("Error:", errorData);
+  //   if (!response.ok) {
+  //     const errorData = await response.json();
+  //     console.error("Error:", errorData);
 
-      return;
-    }
+  //     return;
+  //   }
 
-    const data = await response.json();
-    console.log("Success:", data);
+  //   const data = await response.json();
+  //   console.log("Success:", data);
 
-    // Save email and password to Pinia Store
-    authStore.setEmail(email.value);
-    authStore.setPassword(password.value);
+  //   // Save email and password to Pinia Store
+  //   authStore.setEmail(email.value);
+  //   authStore.setPassword(password.value);
 
-    // Redirect to the Dashboard after successful Login
-    // router.push("/Dashboard");
-  } catch (err) {
-    console.error("Unexpected error:", err);
-  }
+  //   // Redirect to the Dashboard after successful Login
+  //   // router.push("/Dashboard");
+  // } catch (err) {
+  //   console.error("Unexpected error:", err);
+  // }
+
+  window.location.href = '/user';
+
 };
 </script>
 <style scoped>
