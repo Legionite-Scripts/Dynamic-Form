@@ -14,8 +14,8 @@
         <!-- create circle form -->
         <form>
           <!-- circle description -->
-          <h4 class="weight-5 mb-1">Circle Description</h4>
-          <hr class="mb-2" />
+          <h4 class="weight-5">Circle Description</h4>
+          <hr />
 
           <div class="container faded-background">
             <div class="center p-5">
@@ -60,33 +60,67 @@
           <div class="container">
             <div class="form-group">
               <label>Circle Destination</label>
-              <textarea type="text" placeholder="Circle Name"></textarea>
+              <textarea type="text" placeholder="Circle Description"></textarea>
+            </div>
+          </div>
+
+          <!-- product category -->
+          <h4 class="weight-5">Product Category</h4>
+          <hr />
+          <div class="container">
+            <div class="form-group">
+              <label>Type of Products</label>
+              <select name="accountType" required>
+                <option value="">Perishable goods</option>
+                <option></option>
+              </select>
             </div>
           </div>
 
 
+          <!-- shipping details -->
+          <h4 class="weight-5">Shipping Details</h4>
+          <hr />
+          <div class="container">
+            <div class="form-group">
+              <label>Drop-off Location</label>
+              <input type="text" placeholder="Ikeja City Mall, Lagos" />
+            </div>
 
-          <!-- product category -->
-          <h4 class="weight-5 mb-1">Product Category</h4>
-          <hr class="mb-2" />
-          <div class="form-group">
-            <label>Type of Products</label>
-            <select name="accountType" required>
-              <option value="">Perishable goods</option>
-              <option></option>
-            </select>
+
+            <div class="form-group">
+              <label>Pick-up Location</label>
+              <input type="text" placeholder="Semapieno Quaters" />
+            </div>
           </div>
 
+          <div class="container">
+            <div class="form-group">
+              <label>Drop-off Contact Name</label>
+              <input type="text" placeholder="Semapieno Quaters" />
+            </div>
 
-          <!-- shipping details -->
-          <h4 class="weight-5 mb-1">Shipping Details</h4>
-          <hr class="mb-2" />
-          <div class="form-group">
-            <label>Type of Products</label>
-            <select name="accountType" required>
-              <option value="">Perishable goods</option>
-              <option></option>
-            </select>
+            <div class="form-group">
+              <label>Drop-off Contact Number</label>
+              <input type="text" placeholder="+2349281818181" />
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="form-group">
+              <div class="form-group">
+                <label>Drop-off Date</label>
+                <input type="date" placeholder="Date" />
+              </div>
+            </div>
+
+
+            <div class="form-group">
+              <div class="form-group">
+                <label>Drop-off Time</label>
+                <input type="time" placeholder="Time" />
+              </div>
+            </div>
           </div>
 
 

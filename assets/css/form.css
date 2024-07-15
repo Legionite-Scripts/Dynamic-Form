@@ -25,6 +25,8 @@ form input[type="password"],
 form input[type="tel"],
 form input[type="url"],
 form input[type="search"],
+form input[type="date"],
+form input[type="time"],
 form textarea {
   border-radius: 4px;
   border: 0.5px solid rgba(0, 0, 0, 0.10);
@@ -36,13 +38,25 @@ form textarea {
 
 form textarea {
   resize: none;
-  height: auto; /* Allow height to be set by rows */
+  height: auto;
+  /* Allow height to be set by rows */
 }
 
 form textarea[rows="5"] {
-  height: auto; /* Allow height to be set by rows */
+  height: auto;
+  /* Allow height to be set by rows */
 }
 
+
+label {
+  color: #121212;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 8px;
+}
 
 
 select {
@@ -78,7 +92,7 @@ form>div.checklist {
   background-image: url('@/assets/icons/User-Dashboard/upload.svg');
   height: 18px !important;
   width: 18px !important;
-  background-size:cover;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
