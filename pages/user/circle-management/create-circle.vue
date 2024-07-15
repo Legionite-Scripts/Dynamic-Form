@@ -19,7 +19,6 @@
 
           <div class="container faded-background">
             <div class="center p-5">
-
               <div class="upload-wrapper mb-1">
                 <div alt="Upload" class="upload"></div>
               </div>
@@ -77,7 +76,6 @@
             </div>
           </div>
 
-
           <!-- shipping details -->
           <h4 class="weight-5">Shipping Details</h4>
           <hr />
@@ -86,7 +84,6 @@
               <label>Drop-off Location</label>
               <input type="text" placeholder="Ikeja City Mall, Lagos" />
             </div>
-
 
             <div class="form-group">
               <label>Pick-up Location</label>
@@ -114,7 +111,6 @@
               </div>
             </div>
 
-
             <div class="form-group">
               <div class="form-group">
                 <label>Drop-off Time</label>
@@ -122,10 +118,41 @@
               </div>
             </div>
           </div>
-
-
         </form>
-        <div></div>
+        <!--  -->
+        <div>
+          <div class="mb-2"></div>
+          <h3 class="weight-5 mb-2">Content Creation Guideline</h3>
+          <p class="mb-1 weight-3">
+            Work with anyone, anywhere, in real time with web versions of
+            productivity apps Work with anyone, anywhere, in real time with web
+            versions of productivity apps. Work with anyone, anywhere, in real
+            time with web versions of productivity apps
+          </p>
+          <p class="weight-3 mb-1">
+            Work with anyone, anywhere, in real time with web versions of
+            productivity apps Work with anyone, anywhere, in real time with web
+            versions of productivity apps.
+          </p>
+          <p class="weight-3 mb-2">
+            Work with anyone, anywhere, in real time with web versions of
+            productivity apps Work with anyone, anywhere, in real time with web
+            versions of productivity apps.
+          </p>
+
+          <div class="flexed-row">
+            <img
+              src="@/assets/images/general/hero.png"
+              alt="Hero"
+              class="border-round"
+            />
+
+            <div>
+              <p class="weight-4">Founder & CEO</p>
+              <h3 class="weight-5">Marv Magic</h3>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
   </section>
@@ -136,19 +163,46 @@
 <style scoped>
 .bg {
   border-radius: 8px;
-  background: linear-gradient(0deg,
+  background: linear-gradient(
+      0deg,
       rgba(0, 0, 0, 0.5) 0%,
-      rgba(0, 0, 0, 0.5) 100%),
-    url("@/assets/images/User-Dashboard/circle-management-bg.jpeg") lightgray 50% / cover no-repeat;
+      rgba(0, 0, 0, 0.5) 100%
+    ),
+    url("@/assets/images/User-Dashboard/circle-management-bg.jpeg") lightgray
+      50% / cover no-repeat;
   height: 15em;
 }
 
 .content {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 1fr;
+  gap: 56px;
 
-  @media (max-width: 768px) {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
+  @media (max-width: 1000px) {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
+}
+.content > div {
+  height: fit-content !important;
+  padding: 24px;
+  border-radius: 8px;
+  background: #fafafa;
+  gap: 17px;
+}
+.content > div > div:nth-of-type(1) {
+  border-radius: 2px;
+  background: url("@/assets/images/User-Dashboard/circle-guideline.jpeg")
+    lightgray 50% / cover no-repeat;
+  background-size: cover !important;
+  height: 20em;
+}
+.content > div > div:nth-of-type(2){
+gap: 8px;
+}
+.content > div > div:nth-of-type(2) > img{
+    height: 3em;
+}
+.content p{
+    color: #3E3E3E;
 }
 </style>
