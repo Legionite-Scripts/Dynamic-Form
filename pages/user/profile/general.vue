@@ -1,7 +1,7 @@
 <template>
   <section class="wrapper">
     <Navbar />
-    <main class="container">
+    <main class="container mt-5">
       <div class="flexed-row center mb-4">
         <h2 class="weight-5">My Profile</h2>
 
