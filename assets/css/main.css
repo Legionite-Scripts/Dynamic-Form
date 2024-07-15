@@ -205,8 +205,11 @@ select {
     background-position: 98% center;
 }
 
-/* main {
-    height: 100% !important;
-    width: 80% !important;
+main{
+    width: 90%;
     margin: 0 auto;
-} */
+  
+    @media (width< 1000px) {
+      width: 95%;
+    }
+}

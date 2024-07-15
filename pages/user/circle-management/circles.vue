@@ -1,7 +1,7 @@
 <template>
   <section class="wrapper">
     <Navbar />
-    <div class="container">
+    <main class="container">
       <!--  -->
 
       <div class="bg center p-5 mb-5 mt-5">
@@ -27,7 +27,7 @@
         </div>
       </div>
       <!--  -->
-    </div>
+    </main>
   </section>
 </template>
 
@@ -50,15 +50,6 @@ section.wrapper {
   height: 100vh;
   overflow-y: auto;
   margin: 0 auto;
-}
-
-.container {
-  width: 90%;
-  margin: 0 auto;
-
-  @media (width< 1000px) {
-    width: 95%;
-  }
 }
 
 /*  */

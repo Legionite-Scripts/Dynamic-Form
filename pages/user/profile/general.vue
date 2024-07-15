@@ -1,7 +1,7 @@
 <template>
   <section class="wrapper">
     <Navbar />
-    <section class="container">
+    <main class="container">
       <div class="flexed-row center mb-4">
         <h2 class="weight-5">My Profile</h2>
 
@@ -39,7 +39,7 @@
           <productCatalogue v-for="n in 12" :key="n" />
         </div>
       </div>
-    </section>
+    </main>
   </section>
 </template>
 
@@ -55,25 +55,17 @@ section.wrapper {
   width: 100%;
   margin: 0 auto;
 }
-.container {
-  width: 90%;
-  margin: 0 auto;
-  margin-top: 50px;
-  @media (width< 1000px) {
-    width: 95%;
-  }
-}
-.container > div:first-child {
+main > div:first-child {
   justify-content: space-between;
   flex-wrap: wrap;
   @media (width<1000px) {
     gap: 10px;
   }
 }
-.container > div > div {
+main > div > div {
   gap: 20px;
 }
-.container > .profile-main {
+main > .profile-main {
   padding: 32px;
   gap: 32px;
   border-radius: 8px;

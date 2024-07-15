@@ -1,7 +1,7 @@
 <template>
   <section class="wrapper">
     <Navbar />
-    <div class="container">
+    <main>
       <div class="mt-5 mb-3 flexed-column">
         <p>
           Welcome to Zukonu, <a href="#">follow the link</a> to read the user
@@ -88,7 +88,7 @@
           <img src="@/assets/images/User-Dashboard/filler-img.png" alt="" />
         </div>
       </div>
-    </div>
+    </main>
   </section>
 </template>
 
@@ -123,18 +123,7 @@ p a {
   color: #2a6fc3;
 }
 
-
-
-.container {
-  width: 90%;
-  margin: 0 auto;
-
-  @media (width< 1000px) {
-    width: 95%;
-  }
-}
-
-.container > div:nth-of-type(1) {
+main > div:nth-of-type(1) {
   border-radius: 8px;
   border: 1.582px solid rgba(0, 0, 0, 0.1);
   background: #fff;
@@ -143,21 +132,21 @@ p a {
   gap: 24px;
 }
 
-.container > div:nth-of-type(1) > div {
+main > div:nth-of-type(1) > div {
   gap: 8px;
 }
 
-.container > div:nth-of-type(1) > div > button {
+main > div:nth-of-type(1) > div > button {
   border-radius: 2px;
   padding: 8px 16px;
 }
 
-.container > div:nth-of-type(1) > div > button:first-child {
+main > div:nth-of-type(1) > div > button:first-child {
   background: #2a6fc3;
   color: #ffffffff;
 }
 
-.container > div:nth-of-type(1) > div > button:last-child {
+main > div:nth-of-type(1) > div > button:last-child {
   border-radius: 2px;
   border: 0.5px solid rgba(0, 0, 0, 0.1);
   color: #121212;
