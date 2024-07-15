@@ -1,0 +1,15 @@
+form {
+  border-radius: 8px;
+  background: #fafafa;
+  gap: 24px;
+  padding: 32px;
+}
+form > .container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+form .form-group {
+  display: flex;
+  flex-direction: column;
+}
