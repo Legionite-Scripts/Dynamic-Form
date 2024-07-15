@@ -2,11 +2,6 @@
 export default defineNuxtConfig({
   devtools: { enabled: false },
   css: ["~/assets/css/main.css"],
-  mode: 'universal', // or 'spa'
-  router: {
-    base: '/'
-  },
-  generate: {
-    fallback: true // for static hosting
-  }
+  compatibilityDate: '2024-07-15',
+  mode: 'spa'
 })
