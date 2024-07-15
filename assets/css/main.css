@@ -217,3 +217,14 @@ main {
     width: 95%;
   }
 }
+
+
+.chat-container {
+  border-radius: 8px;
+  background: #fafafa;
+  padding: 32px;
+  width: 100%;
+  display: grid;
+  gap: 24px;
+  height: fit-content !important;
+}
