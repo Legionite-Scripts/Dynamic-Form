@@ -12,36 +12,26 @@
 
       <div class="content mb-5">
         <!--  -->
-        <div>
-          <div class="mb-2"></div>
-          <h3 class="weight-5 mb-2">Content Creation Guideline</h3>
-          <p class="mb-1 weight-3">
-            Work with anyone, anywhere, in real time with web versions of
-            productivity apps Work with anyone, anywhere, in real time with web
-            versions of productivity apps. Work with anyone, anywhere, in real
-            time with web versions of productivity apps
-          </p>
-          <p class="weight-3 mb-1">
-            Work with anyone, anywhere, in real time with web versions of
-            productivity apps Work with anyone, anywhere, in real time with web
-            versions of productivity apps.
-          </p>
-          <p class="weight-3 mb-2">
-            Work with anyone, anywhere, in real time with web versions of
-            productivity apps Work with anyone, anywhere, in real time with web
-            versions of productivity apps.
-          </p>
-
-          <div class="flexed-row">
-            <img
-              src="@/assets/images/general/hero.png"
-              alt="Hero"
-              class="border-round"
-            />
+        <div class="circle-admin flexed-column">
+          <div class="flexed-row top-admin">
+            <img src="@/assets/images/general/hero.png" alt="Hero" />
 
             <div>
-              <p class="weight-4">Founder & CEO</p>
-              <h3 class="weight-5">Marv Magic</h3>
+              <h2 class="weight-5 mb-1">Circle Admin</h2>
+              <h3 class="weight-5 mb-1">Lorem Ipsum Circle Creator</h3>
+              <p class="mb-2 weight-4">loremipsumcirclecreator@gmail...</p>
+
+              <button>Message</button>
+            </div>
+          </div>
+          <div class="bottom-admin flexed-row">
+            <div>
+              <h3 class="weight-5 mb-1">Date Created</h3>
+              <p>12/12/2023</p>
+            </div>
+            <div>
+              <h3 class="weight-5 mb-1">Circle Status</h3>
+              <p>Active</p>
             </div>
           </div>
         </div>
@@ -81,7 +71,12 @@
           <div class="container">
             <div class="form-group">
               <label>Circle Destination</label>
-              <p>Lorem ipsum dolor sit amet consectetur. Nisl velit vitae senectus sagittis. Vitae nec sit sed phasellus. Orci risus congue et cursus platea velit iaculis sed orci. Vitae tincidunt diam aenean urna posuere egestas mauris neque metus.</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur. Nisl velit vitae
+                senectus sagittis. Vitae nec sit sed phasellus. Orci risus
+                congue et cursus platea velit iaculis sed orci. Vitae tincidunt
+                diam aenean urna posuere egestas mauris neque metus.
+              </p>
             </div>
           </div>
 
@@ -139,7 +134,6 @@
           </div>
         </form>
       </div>
-
     </main>
   </section>
 </template>
@@ -150,39 +144,49 @@
 .bg {
   border-radius: 8px;
   background: url("@/assets/images/User-Dashboard/circle-guideline.jpeg");
+  background-size: cover;
+  background-position: center;
+
   height: 15em;
 }
 
 .content {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  gap: 56px;
+  gap: 24px;
 
   @media (max-width: 1000px) {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
 }
-.content > div {
+.content > .circle-admin {
   height: fit-content !important;
-  padding: 24px;
   border-radius: 8px;
-  background: #fafafa;
-  gap: 17px;
+  gap: 24px;
 }
-.content > div > div:nth-of-type(1) {
+.circle-admin > div {
+  border-radius: 8px;
+  border: 1.582px solid rgba(0, 0, 0, 0.1);
+  background: #fff;
+  box-shadow: 0px 6.327px 12.655px 0px rgba(0, 0, 0, 0.04);
+  padding: 32px;
+}
+.circle-admin > .top-admin {
+  gap: 32px;
+  @media (max-width: 1000px) {
+    flex-wrap: wrap;
+  }
+}
+.circle-admin button {
+  padding: 8px 16px;
   border-radius: 2px;
-  background: url("@/assets/images/User-Dashboard/circle-guideline.jpeg")
-    lightgray 50% / cover no-repeat;
-  background-size: cover !important;
-  height: 20em;
+  border: 0.5px solid rgba(0, 0, 0, 0.1);
+  background: none;
 }
-.content > div > div:nth-of-type(2){
-gap: 8px;
+.circle-admin > .bottom-admin {
+  gap: 90px !important;
 }
-.content > div > div:nth-of-type(2) > img{
-    height: 3em;
-}
-.content p{
-    color: #3E3E3E;
+.circle-admin > .bottom-admin p {
+  color: rgba(0, 0, 0, 0.5);
 }
 </style>
