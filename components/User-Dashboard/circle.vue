@@ -6,7 +6,7 @@
           src="@/assets/icons/User-Dashboard/store-outline-icon.svg"
           alt="Store Icon"
         />
-        Papa Joe's Store
+        Papa Joe's Circle
       </p>
     </div>
 
@@ -83,15 +83,14 @@ main > .container > div {
 }
 main > div:nth-of-type(1) {
   padding: 16px;
-  height: 10em;
+  height: 7em;
   background-size: cover;
   border-radius: 7.815px 7.815px 0px 0px;
   background: linear-gradient(
       0deg,
       rgba(0, 0, 0, 0.4) 0%,
       rgba(0, 0, 0, 0.3) 100%
-    ),
-    url("@/assets/images/User-Dashboard/component-bg.jpeg");
+    )
 }
 main > div:nth-of-type(1) > p {
   color: white;

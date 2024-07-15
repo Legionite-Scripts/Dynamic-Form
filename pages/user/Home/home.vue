@@ -224,19 +224,8 @@ p a {
 }
 .circles > div {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 32px;
-  @media (max-width: 1400px) {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  @media (max-width: 950px) {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  @media (max-width: 650px) {
-    grid-template-columns: repeat(1, 1fr);
-  }
 }
 .bottom {
   gap: 32px;
