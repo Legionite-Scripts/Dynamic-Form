@@ -13,18 +13,18 @@
       <div class="content mb-5">
         <!--  -->
         <div class="circle-admin flexed-column">
-          <div class="flexed-row top-admin">
+          <div class="flexed-row top-admin center">
             <img src="@/assets/images/general/hero.png" alt="Hero" />
 
             <div>
-              <h2 class="weight-5 mb-1">Circle Admin</h2>
-              <h3 class="weight-5 mb-1">Lorem Ipsum Circle Creator</h3>
+              <h3 class="weight-5 mb-1">Circle Admin</h3>
+              <h4 class="weight-5 mb-1">Lorem Ipsum Circle Creator</h4>
               <p class="mb-2 weight-4">loremipsumcirclecreator@gmail...</p>
 
               <button>Message</button>
             </div>
           </div>
-          <div class="bottom-admin flexed-row">
+          <div class="bottom-admin flexed-row mb-3">
             <div>
               <h3 class="weight-5 mb-1">Date Created</h3>
               <p>12/12/2023</p>
@@ -32,6 +32,24 @@
             <div>
               <h3 class="weight-5 mb-1">Circle Status</h3>
               <p>Active</p>
+            </div>
+          </div>
+
+          <div class="merchant-actions">
+            <h3 class="mb-1 weight-5">Merchant Actions</h3>
+            <hr class="mb-2" />
+            <div class="flexed-row">
+              <button>Chatroom</button>
+              <button>Add packages</button>
+            </div>
+          </div>
+
+          <div class="admin-actions">
+            <h3 class="mb-1 weight-5">Admin Actions</h3>
+            <hr class="mb-2" />
+            <div class="flexed-row">
+              <button>Approve Requests</button>
+              <button>Delete Circle</button>
             </div>
           </div>
         </div>
@@ -132,10 +150,6 @@
               </div>
             </div>
           </div>
-
-          <NuxtLink to="circle-request-approved">
-            <button>Join Circle</button>
-          </NuxtLink>
         </form>
       </div>
     </main>
@@ -168,7 +182,8 @@
   border-radius: 8px;
   gap: 24px;
 }
-.circle-admin > div {
+.circle-admin > .top-admin,
+.circle-admin > .bottom-admin {
   border-radius: 8px;
   border: 1.582px solid rgba(0, 0, 0, 0.1);
   background: #fff;
@@ -192,5 +207,28 @@
 }
 .circle-admin > .bottom-admin p {
   color: rgba(0, 0, 0, 0.5);
+}
+.circle-admin > .merchant-actions > div,
+.circle-admin > .admin-actions > div {
+  gap: 12px !important;
+}
+.circle-admin > .merchant-actions > div > button,
+.circle-admin > .admin-actions > div > button {
+  width: 50%;
+}
+.circle-admin > .merchant-actions > div > button:first-child,
+.circle-admin > .admin-actions > div > button:first-child {
+  border-radius: 2px;
+  background: #2e77ce;
+  color: #fff;
+}
+.circle-admin > .merchant-actions > div > button:last-child {
+  border-radius: 2px;
+  background: #fff;
+}
+.circle-admin > .admin-actions > div > button:last-child {
+  border-radius: 2px;
+  background: #ff3d22;
+  color: #fff;
 }
 </style>

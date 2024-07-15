@@ -8,7 +8,9 @@
           A link has been sent to your email, click on it to reset your password
           Sign in
         </p>
-        <button class="p-1">Sign In</button>
+        <NuxtLink to="/auth/login" style="width: 100%">
+          <button class="p-1">Sign In</button>
+        </NuxtLink>
       </div>
     </div>
   </section>

@@ -25,12 +25,18 @@
         v-model="password"
         required
       />
-      <a href="#" class="right mb-2">Forgot Password?</a>
+
+      <NuxtLink to="/auth/signup" class="nuxt-link">
+        <a href="#" class="right mb-2">Forgot Password?</a>
+      </NuxtLink>
     </div>
 
     <button class="p-2 mb-2" type="submit">Sign In</button>
     <p class="mb-2">-OR-</p>
-    <p>Don't have an account? <a href="#" class="weight-7">Sign Up</a></p>
+    <p>
+      Don't have an account?
+      <NuxtLink to="signup" class="nuxt-link"> <a href="#" class="weight-7">Sign Up</a></NuxtLink>
+    </p>
   </form>
 </template>
 
@@ -96,7 +102,7 @@ label {
 label > span {
   color: #fe4a23;
 }
-form > div > a {
+form > div > a * {
   color: #fe4a23;
 }
 input {

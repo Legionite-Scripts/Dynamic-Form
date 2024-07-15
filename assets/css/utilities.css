@@ -47,7 +47,9 @@ button {
     border-radius: 10px;
     color: #ffffff !important;
 }
-
+.nuxt-link{
+    width: 100%;
+  }
 
 hr {
     border: .5px solid #c9c9c83e !important

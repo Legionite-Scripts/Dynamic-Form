@@ -112,11 +112,15 @@ onBeforeUnmount(() => clearInterval(timerInterval));
   position: absolute;
   top: 0;
   right: 0;
-  width: 20vw;
+  width: 20% !important;
   padding: 20px;
   border-radius: 4px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   transition: opacity 0.3s ease, transform 0.3s ease;
+
+  @media(width<1000px){
+    width: 40% !important;
+  }
 }
 .toast--success {
   background-color: #dff0d8;

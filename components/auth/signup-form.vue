@@ -64,26 +64,31 @@
       />
     </div>
 
-    <div class="flexed-row center terms mb-3">
+    <div class="flexed-row center terms">
       <input type="checkbox" class="checkbox" name="terms" required />&nbsp;
       <label for="terms">
         I accept <a href="#" class="weight-7">Terms & Conditions</a></label
       >
     </div>
 
-    <button class="p-2 mb-2" type="submit">Sign Up</button>
-    <p class="mb-2">-OR-</p>
-    <p>Already have an account? <a href="#" class="weight-7">Sign In</a></p>
+    <button class="p-2" type="submit">Sign Up</button>
+    <p>-OR-</p>
+    <p>
+      Already have an account?
+      <NuxtLink to="login">
+        <a href="#" class="weight-7">Sign In</a></NuxtLink
+      >
+    </p>
 
-    <ToastNotification
-      v-for="(toast, index) in toasts"
-      :key="index"
-      :type="toast.type"
-      :title="toast.title"
-      :description="toast.description"
-      :timer="toast.timer"
-      @close="removeToast(index)"
-    />
+      <ToastNotification
+        v-for="(toast, index) in toasts"
+        :key="index"
+        :type="toast.type"
+        :title="toast.title"
+        :description="toast.description"
+        :timer="toast.timer"
+        @close="removeToast(index)"
+      />
   </form>
 </template>
 
@@ -157,7 +162,7 @@ form {
   background-color: #ffffff;
 
   @media (width<1000px) {
-    width: 100vw;
+    /* width: 100vw; */
     height: 100vh !important;
     overflow-y: auto;
   }

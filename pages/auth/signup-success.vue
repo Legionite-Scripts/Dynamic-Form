@@ -7,7 +7,9 @@
         <p class="text-center mb-2">
           Account creation successful, check your email for account activation
         </p>
-        <button class="p-1">Sign In</button>
+        <NuxtLink to="/auth/login" style="width: 100%;">
+          <button class="p-1">Sign In</button>
+        </NuxtLink>
       </div>
     </div>
   </section>

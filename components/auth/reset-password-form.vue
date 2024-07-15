@@ -41,7 +41,11 @@
       <p><img src="@/assets/icons/check.png" alt="check" />Password match</p>
     </div>
 
-    <button class="p-1 mb-2">Sign Up</button>
+
+    <NuxtLink to="signup" class="nuxt-link">
+
+      <button class="p-1 mb-2">Sign Up</button>
+    </NuxtLink>
   </form>
 </template>
 
@@ -79,8 +83,8 @@ input::placeholder {
   color: #8e8f8e;
 }
 
-button {
-  width: 100%;
+button{
+  width: 100% !important;
   border-radius: 2px;
   background: #121212;
   color: #ffffffff;
