@@ -5,6 +5,7 @@ form {
   width: 100%;
   display: grid;
   gap: 24px;
+  height: fit-content !important;
 }
 
 form > .container {
@@ -97,4 +98,10 @@ form > div.checklist {
 .faded-background {
   border-radius: var(--border-radius);
   background-color: var(--faded-background);
+}
+form button {
+  border-radius: 2px;
+  background: #121212;
+  padding: 8px 16px;
+  color: #fff;
 }

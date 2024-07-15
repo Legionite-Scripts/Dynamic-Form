@@ -10,7 +10,9 @@
           <input type="email" placeholder="JohnDoe@gmail.com" required />
         </div>
 
-        <button class="p-1">Sign In</button>
+        <NuxtLink to="/auth/login" style="width: 100%;">
+          <button class="p-1">Sign In</button>
+        </NuxtLink>
       </form>
     </div>
   </section>

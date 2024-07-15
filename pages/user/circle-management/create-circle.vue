@@ -118,6 +118,10 @@
               </div>
             </div>
           </div>
+
+          <NuxtLink to="/user/circle-management/circle-description">
+            <button>Create Circle</button>
+          </NuxtLink>
         </form>
         <!--  -->
         <div>
@@ -196,13 +200,13 @@
   background-size: cover !important;
   height: 20em;
 }
-.content > div > div:nth-of-type(2){
-gap: 8px;
+.content > div > div:nth-of-type(2) {
+  gap: 8px;
 }
-.content > div > div:nth-of-type(2) > img{
-    height: 3em;
+.content > div > div:nth-of-type(2) > img {
+  height: 3em;
 }
-.content p{
-    color: #3E3E3E;
+.content p {
+  color: #3e3e3e;
 }
 </style>

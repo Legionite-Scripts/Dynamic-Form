@@ -8,7 +8,7 @@
 </template>
 
 <script setup>
-import resetPasswordForm from "@/components/Auth/reset-password-form.vue";
+import resetPasswordForm from "@/components/auth/reset-password-form.vue";
 </script>
 
 <style scoped>
