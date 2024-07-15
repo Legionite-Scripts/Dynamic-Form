@@ -75,7 +75,7 @@
     <p>-OR-</p>
     <p>
       Already have an account?
-      <NuxtLink to="login">
+      <NuxtLink to="/auth/login">
         <a href="#" class="weight-7">Sign In</a></NuxtLink
       >
     </p>
