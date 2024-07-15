@@ -123,13 +123,7 @@ p a {
   color: #2a6fc3;
 }
 
-main {
-  width: 100%;
-  height: 100vh;
-  overflow-y: auto;
-  margin: 0 auto;
-  background-color: #f2f2f2;
-}
+
 
 .container {
   width: 90%;

@@ -40,7 +40,7 @@
             <div class="product-catalogue">
                 <h2 class="weight-5 mb-4">Product Catalogue</h2>
                 <div>
-                    <product-catalogue-component v-for="n in 10" :key="n" />
+                    <product-catalogue v-for="n in 10" :key="n" />
                 </div>
             </div>
         </section>
@@ -48,7 +48,7 @@
 </template>
 
 <script setup>
-import productCatalogueComponent from "@/components/User-Dashboard/product-catalogue-component.vue";
+import productCatalogue from "@/components/User-Dashboard/product-catalogue.vue";
 </script>
 
 <style scoped>
