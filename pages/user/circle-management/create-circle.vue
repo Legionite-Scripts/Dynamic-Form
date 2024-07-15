@@ -4,29 +4,92 @@
     <main class="mt-5">
       <div class="bg mb-3"></div>
       <!--  -->
-      <h2 class="weight-4">Create Circle</h2>
+      <h2 class="weight-4 mb-1">Create Circle</h2>
       <p class="weight-4 mb-4">
         Lorem ipsum dolor sit amet consectetur. Enim faucibus nunc erat ac. Ut
         duis.
       </p>
 
-      <div class="content mb-5 flexed-row">
+      <div class="content mb-5">
+        <!-- create circle form -->
         <form>
+          <!-- circle description -->
           <h4 class="weight-5 mb-1">Circle Description</h4>
           <hr class="mb-2" />
 
-          <div class="container">
+          <div class="container faded-background">
             <div class="center p-5">
-            <div class="center border-round p-1 mb-1">
-                <img
-                src="@/assets/icons/User-Dashboard/upload.svg"
-                alt="Upload"
-                class="mb-1"
-              />
-            </div>
+
+              <div class="upload-wrapper mb-1">
+                <div alt="Upload" class="upload"></div>
+              </div>
+
               <p class="weight-3">Product Thumbail (1mb max)</p>
             </div>
           </div>
+
+          <div class="container">
+            <div class="form-group">
+              <label>Circle Name</label>
+              <input type="text" placeholder="Circle Name" />
+            </div>
+            <div class="form-group">
+              <label>Contact Number</label>
+              <input type="text" placeholder="Circle Name" />
+            </div>
+            <div class="form-group">
+              <label>Contact Email</label>
+              <input type="text" placeholder="Circle Name" />
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="form-group">
+              <label>From Location</label>
+              <select name="accountType" required>
+                <option value="">Merchant</option>
+                <option></option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>To Destination</label>
+              <input type="text" placeholder="Circle Name" />
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="form-group">
+              <label>Circle Destination</label>
+              <textarea type="text" placeholder="Circle Name"></textarea>
+            </div>
+          </div>
+
+
+
+          <!-- product category -->
+          <h4 class="weight-5 mb-1">Product Category</h4>
+          <hr class="mb-2" />
+          <div class="form-group">
+            <label>Type of Products</label>
+            <select name="accountType" required>
+              <option value="">Perishable goods</option>
+              <option></option>
+            </select>
+          </div>
+
+
+          <!-- shipping details -->
+          <h4 class="weight-5 mb-1">Shipping Details</h4>
+          <hr class="mb-2" />
+          <div class="form-group">
+            <label>Type of Products</label>
+            <select name="accountType" required>
+              <option value="">Perishable goods</option>
+              <option></option>
+            </select>
+          </div>
+
+
         </form>
         <div></div>
       </div>
@@ -39,37 +102,19 @@
 <style scoped>
 .bg {
   border-radius: 8px;
-  background: linear-gradient(
-      0deg,
+  background: linear-gradient(0deg,
       rgba(0, 0, 0, 0.5) 0%,
-      rgba(0, 0, 0, 0.5) 100%
-    ),
-    url("@/assets/images/User-Dashboard/circle-management-bg.jpeg") lightgray
-      50% / cover no-repeat;
+      rgba(0, 0, 0, 0.5) 100%),
+    url("@/assets/images/User-Dashboard/circle-management-bg.jpeg") lightgray 50% / cover no-repeat;
   height: 15em;
 }
-.content {
-  border: 1px solid #333;
-  /* height: 60em !important; */
-  gap: 56px;
-}
-.content > form,
-.content > div {
-  border: 1px solid #333;
-  width: 50%;
-  height: auto !important;
-  height: fit-content !important;
-}
-.content form {
-  padding: 32px;
-}
-form .container:nth-of-type(1) > div {
-    border-radius: 4px;
-    background: #F2F2F2;
-}
-form .container:nth-of-type(1) > div > div{
-    border: 1px solid #333;
-    
-}
 
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
+  }
+}
 </style>

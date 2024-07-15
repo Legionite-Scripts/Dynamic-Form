@@ -1,7 +1,7 @@
 <template>
   <nav>
     <main class="pt-2 pb-2 flexed-row center">
-      <h2 class="weight-5">Zukonu Transporter</h2>
+      <h2 class="weight-5">Zukonu</h2>
       <img
         src="@/assets/images/general/hero.png"
         alt="Hero"
@@ -17,7 +17,6 @@ export default {};
 
 <style scoped>
 nav {
-  width: 100vw;
   margin: 0 auto;
   background: #121212;
 }

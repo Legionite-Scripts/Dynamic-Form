@@ -23,7 +23,6 @@
           <p>
             Personalize your account with a photo. Your profile photo<br />
             will appear on apps and devices that use your<br />
-            Microsoft account.
           </p>
 
           <div class="flexed-row">

@@ -4,8 +4,12 @@
     box-sizing: border-box;
     user-select: none;
     -webkit-user-drag: none;
-    overflow-x: hidden !important;
 }
+
+html {
+    background-color: #f2f2f2;
+}
+
 input,
 select {
     padding: 0 1em 0 1em;
