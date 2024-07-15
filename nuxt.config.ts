@@ -1,11 +1,8 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  devtools: { enabled: false },
+  compatibilityDate: "2024-04-03",
+  devtools: { enabled: true },
   css: ["~/assets/css/main.css"],
-  compatibilityDate: '2024-07-15',
-  nitro: {
-    prerender: {
-      autoSubfolderIndex: false
-    }
-  }
-})
+  modules: ["@pinia/nuxt"],
+  plugins: [{ src: "~/plugins/toast.js", mode: "client" }],
+});

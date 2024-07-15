@@ -10,13 +10,12 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^6.5.2",
-    "@fortawesome/free-solid-svg-icons": "^6.5.2",
-    "@fortawesome/vue-fontawesome": "^3.0.8",
-    "install": "^0.13.0",
-    "npm": "^10.8.2",
+    "@pinia/nuxt": "^0.5.1",
+    "axios": "^1.7.2",
+    "canvas-confetti": "^1.9.3",
     "nuxt": "^3.12.3",
-    "vue": "latest"
-  },
-  "packageManager": "pnpm@9.4.0+sha512.f549b8a52c9d2b8536762f99c0722205efc5af913e77835dbccc3b0b0b2ca9e7dc8022b78062c17291c48e88749c70ce88eb5a74f1fa8c4bf5e18bb46c8bd83a"
+    "pinia": "^2.1.7",
+    "vue": "latest",
+    "vue-toastification": "2.0.0-rc.5"
+  }
 }
