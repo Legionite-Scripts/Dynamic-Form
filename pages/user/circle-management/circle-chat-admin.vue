@@ -2,7 +2,15 @@
   <section class="wrapper">
     <Navbar />
     <main class="mt-5">
-      <h2 class="weight-4 mb-3">Join The Conversation</h2>
+      <div class="header mb-3">
+        <h2 class="weight-4 mb-3">Join The Conversation</h2>
+
+        <div>
+          <button>Add Transporter</button>
+          <button>See Circle Packages</button>
+          <button>Delete Circle</button>
+        </div>
+      </div>
 
       <div class="content mb-5">
         <!--  -->
@@ -274,6 +282,30 @@
 <script></script>
 
 <style scoped>
+.header {
+  display: grid;
+  grid-template-columns: 4fr auto;
+  @media (max-width: 1000px) {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
+.header > div {
+  display: flex;
+  flex-direction: row;
+  height: fit-content !important;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.header button {
+  padding: 8px 16px;
+  height: auto !important;
+  border-radius: 2px;
+  background: #121212;
+  color: #fff;
+}
+.header button:last-child {
+  background: #ff3d22;
+}
 .bg {
   border-radius: 8px;
   background: url("@/assets/images/User-Dashboard/circle-guideline.jpeg");
@@ -380,7 +412,7 @@
 form.send-chat {
   padding: 0px;
 }
-form.send-chat .container{
+form.send-chat .container {
   display: grid;
   grid-template-columns: 90% 1fr;
   @media (max-width: 1000px) {
