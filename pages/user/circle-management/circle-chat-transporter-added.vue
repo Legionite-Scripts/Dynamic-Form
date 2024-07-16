@@ -22,8 +22,8 @@
               <h3 class="weight-5 mb-1">Transporter</h3>
               <p class="mb-4 weight-4">Transporter Not Selected</p>
 
-              <button class="add-transporter flexed-row">
-                Add Transporter To Circle
+              <button class="add-transporter">
+                View Transporter Conversation
               </button>
             </div>
           </div>
