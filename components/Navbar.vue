@@ -1,12 +1,15 @@
 <template>
   <nav>
     <main class="pt-2 pb-2 flexed-row center">
-
       <nuxt-link to="/">
         <h2 class="weight-5">Zukonu</h2>
       </nuxt-link>
       <nuxt-link to="/user/profile">
-        <img src="@/assets/images/general/hero.png" alt="Hero" class="border-round" />
+        <img
+          src="@/assets/images/general/hero.png"
+          alt="Hero"
+          class="border-round"
+        />
       </nuxt-link>
     </main>
   </nav>
@@ -20,6 +23,9 @@ export default {};
 nav {
   margin: 0 auto;
   background: #121212;
+  position: sticky;
+  width: 100% !important;
+  top: 0;
 }
 
 main {
@@ -34,7 +40,7 @@ main {
   }
 }
 
-nav>main img {
+nav > main img {
   height: 3em;
 }
 </style>

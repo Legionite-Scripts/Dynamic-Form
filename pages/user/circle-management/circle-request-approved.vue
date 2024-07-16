@@ -39,8 +39,10 @@
             <h3 class="mb-1 weight-5">Merchant Actions</h3>
             <hr class="mb-2" />
             <div class="flexed-row">
-              <button>Chatroom</button>
-              <button>Add packages</button>
+              <button><NuxtLink to="circle-chat">Chatroom</NuxtLink></button>
+              <button>
+                <NuxtLink to="circle-package-added">Add Package</NuxtLink>
+              </button>
             </div>
           </div>
         </div>
@@ -202,18 +204,17 @@
 .circle-admin > .merchant-actions > div {
   gap: 12px !important;
 }
-.circle-admin > .merchant-actions > div >button{
+.circle-admin > .merchant-actions > div > button {
   width: 50%;
   gap: 12px;
 }
-.circle-admin > .merchant-actions > div >button:first-child{
-border-radius: 2px;
-background: #2E77CE;
-color: #fff;
-}
-.circle-admin > .merchant-actions > div >button:last-child{
+.circle-admin > .merchant-actions > div > button:first-child {
   border-radius: 2px;
-  background: #FFF;
+  background: #2e77ce;
+  color: #fff;
+}
+.circle-admin > .merchant-actions > div > button:last-child {
+  border-radius: 2px;
+  background: #fff;
 }
 </style>
-

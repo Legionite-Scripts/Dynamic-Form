@@ -119,9 +119,9 @@
             </div>
           </div>
 
-          <NuxtLink to="/user/circle-management/circle-description">
-            <button>Create Circle</button>
-          </NuxtLink>
+   
+            <button><NuxtLink to="circle-description">Create Circle</NuxtLink></button>
+        
         </form>
         <!--  -->
         <div>

@@ -12,12 +12,12 @@
         <button>All Circles</button>
         <button>Created By Me</button>
         <button>Others</button>
-      <a  >
         <button class="flexed-row">
-          Create Circle
-          <img src="@/assets/icons/User-Dashboard/plus.svg" alt="" />
+          <NuxtLink class="flexed-row" to="create-circle">
+            Create Circle
+            <img src="@/assets/icons/User-Dashboard/plus.svg" alt="Plus"
+          /></NuxtLink>
         </button>
-      </a >
       </div>
 
       <!--  -->

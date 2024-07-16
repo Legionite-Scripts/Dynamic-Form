@@ -277,6 +277,10 @@
               </div>
             </div>
           </form>
+
+          <button class="add-my-package">
+            <NuxtLink to="circle-package-added">Add My Package</NuxtLink>
+          </button>
         </div>
       </div>
     </main>
@@ -436,5 +440,12 @@ form.send-chat button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.add-my-package {
+  border-radius: 2px;
+  width: fit-content !important;
+  padding: 8px 16px;
+  background: #2a6fc3;
+  color: #fff;
 }
 </style>

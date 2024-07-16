@@ -133,9 +133,9 @@
             </div>
           </div>
 
-          <NuxtLink to="circle-request-approved">
-            <button>Join Circle</button>
-          </NuxtLink>
+          <button>
+            <NuxtLink to="circle-request-approved">Join Circle</NuxtLink>
+          </button>
         </form>
       </div>
     </main>
