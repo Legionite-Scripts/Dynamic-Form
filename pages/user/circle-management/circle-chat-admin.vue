@@ -263,7 +263,7 @@
                 ></textarea>
               </div>
 
-              <div class="form-group">
+              <div class="form-group center">
                 <button class="border-round">
                   <img
                     src="@/assets/icons/User-Dashboard/send-chat.svg"
