@@ -12,10 +12,12 @@
         <button>All Circles</button>
         <button>Created By Me</button>
         <button>Others</button>
+      <a  >
         <button class="flexed-row">
           Create Circle
           <img src="@/assets/icons/User-Dashboard/plus.svg" alt="" />
         </button>
+      </a >
       </div>
 
       <!--  -->

@@ -236,3 +236,11 @@ main {
   gap: 24px;
   height: fit-content !important;
 }
+
+.nuxt-link{
+  all: unset !important;
+}
+
+.NuxtLink{
+  all: unset !important
+}

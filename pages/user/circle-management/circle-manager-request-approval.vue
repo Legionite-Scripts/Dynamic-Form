@@ -61,7 +61,7 @@
 }
 .circle-admin > .top-admin {
   border-radius: 8px;
-  border: 1.582px solid rgba(0, 0, 0, 0.1);
+  border: 1.582px solid rgba(0, 0, 0, 0cd.1);
   background: #fff;
   box-shadow: 0px 6.327px 12.655px 0px rgba(0, 0, 0, 0.04);
   padding: 32px;
