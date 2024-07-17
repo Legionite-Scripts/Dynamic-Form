@@ -1,6 +1,5 @@
 <template>
-  <section class="wrapper">
-    <Navbar />
+  <NuxtLayout name="main">
     <main class="mt-5">
       <div class="flexed-row center mb-4">
         <h2 class="weight-5">Address Management</h2>
@@ -80,9 +79,11 @@
             />
           </div>
         </section>
+
+        <button>Save Address Info</button>
       </form>
     </main>
-  </section>
+  </NuxtLayout>
 </template>
 
 <script setup>

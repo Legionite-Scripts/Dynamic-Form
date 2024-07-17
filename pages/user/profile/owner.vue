@@ -1,6 +1,5 @@
 <template>
-  <section class="wrapper">
-    <Navbar />
+  <NuxtLayout name="main">
     <main>
       <div class="flexed-row center mb-4">
         <h2 class="weight-5">My Profile</h2>
@@ -40,7 +39,7 @@
         </div>
       </div>
     </main>
-  </section>
+  </NuxtLayout>
 </template>
 
 <script setup>

@@ -1,7 +1,5 @@
 <template>
-  <section>
-    <Navbar />
-
+  <NuxtLayout name="main">
     <main>
       <!-- Delivery -->
       <div class="delivery mt-5 mb-5">
@@ -12,14 +10,11 @@
         </div>
       </div>
 
-
-
       <!--  -->
 
-      <div class="map">
-      </div>
+      <div class="map"></div>
     </main>
-  </section>
+  </NuxtLayout>
 </template>
 
 <script setup>
@@ -37,9 +32,9 @@ import trackDelivery from "@/components/user/track-delivery.vue";
   }
 }
 
-.map{
-    height: 30em;
-    width: 100%;
-    background: url("@/assets/images/User-Dashboard/map.png");
+.map {
+  height: 30em;
+  width: 100%;
+  background: url("@/assets/images/User-Dashboard/map.png");
 }
 </style>

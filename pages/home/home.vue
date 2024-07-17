@@ -1,6 +1,5 @@
 <template>
-  <section class="wrapper">
-    <Navbar />
+  <NuxtLayout name="main">
     <main>
       <div class="mt-5 mb-3 flexed-column">
         <p>
@@ -21,43 +20,37 @@
 
         <form class="section">
           <div class="container">
-          <div class="form-group">
-            <label for="location">From Location</label>
-            <select v-model="currentLocation" name="currentLocation" required>
-              <option value="">Lagos, Nigeria</option>
-              <option
-                v-for="option in options"
-                :key="option.value"
-                :value="option.value"
-              >
-                {{ option.label }}
-              </option>
-            </select>
+            <div class="form-group">
+              <label for="location">From Location</label>
+              <select v-model="currentLocation" name="currentLocation" required>
+                <option value="">Lagos, Nigeria</option>
+                <option
+                  v-for="option in options"
+                  :key="option.value"
+                  :value="option.value"
+                >
+                  {{ option.label }}
+                </option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="location">To Destination</label>
+              <select v-model="destination" name="currentLocation" required>
+                <option value="">Accra, Ghana</option>
+                <option
+                  v-for="option in destinationOptions"
+                  :key="option.value"
+                  :value="option.value"
+                >
+                  {{ option.label }}
+                </option>
+              </select>
+            </div>
+
+            <button>Find Circle</button>
           </div>
-
-          <div class="form-group">
-            <label for="location">To Destination</label>
-            <select v-model="destination" name="currentLocation" required>
-              <option value="">Accra, Ghana</option>
-              <option
-                v-for="option in destinationOptions"
-                :key="option.value"
-                :value="option.value"
-              >
-                {{ option.label }}
-              </option>
-            </select>
-          </div>
-          
-          <button>Find Circle</button>
-
-        </div>
-
-          
-          
-
         </form>
-
       </div>
       <!--  -->
       <div class="circles mb-4">
@@ -97,7 +90,7 @@
         </div>
       </div>
     </main>
-  </section>
+  </NuxtLayout>
 </template>
 
 <script setup>
@@ -178,8 +171,7 @@ main > div:nth-of-type(1) > div > button:last-child {
   width: 60%;
 
   @media (max-width: 1000px) {
-    width: 90%
-  
+    width: 90%;
   }
 }
 
@@ -194,7 +186,6 @@ main > div:nth-of-type(1) > div > button:last-child {
   gap: 12px;
   flex-wrap: wrap;
 }
-
 
 .bg select {
   background-color: #fff !important;

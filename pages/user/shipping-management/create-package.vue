@@ -1,6 +1,5 @@
 <template>
-  <section>
-    <Navbar />
+  <NuxtLayout name="main">
     <main>
       <div class="bg mt-5 mb-4"></div>
 
@@ -55,26 +54,22 @@
             </div>
           </div>
 
-
           <button>Save Package</button>
         </form>
 
         <!--  -->
         <form class="center">
-        <div class="center">
+          <div class="center">
             <button class="border-round mb-1">
-                <img src="@/assets/icons/User-Dashboard/upload.svg" alt="">
+              <img src="@/assets/icons/User-Dashboard/upload.svg" alt="" />
             </button>
 
             <p class="weight-3">Package Thumbnail (1mb max)</p>
-        </div>
-          
-
-
+          </div>
         </form>
       </div>
     </main>
-  </section>
+  </NuxtLayout>
 </template>
 
 <script></script>
@@ -97,20 +92,20 @@
   }
 }
 .content > form {
-    height:inherit !important;
+  height: inherit !important;
 }
-.content > form:last-child button{
-    height: 2em;
-    width:2em;
-    background: none;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: #EAEAEA;
+.content > form:last-child button {
+  height: 2em;
+  width: 2em;
+  background: none;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #eaeaea;
 }
-.content > form:last-child p{
-    color: rgba(0, 0, 0, 0.50);
+.content > form:last-child p {
+  color: rgba(0, 0, 0, 0.5);
 }
 </style>

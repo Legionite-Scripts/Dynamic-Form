@@ -1,6 +1,5 @@
 <template>
-  <section class="wrapper">
-    <Navbar />
+  <NuxtLayout name="main">
     <main class="mt-5">
       <div class="bg mb-3"></div>
       <!--  -->
@@ -119,9 +118,9 @@
             </div>
           </div>
 
-   
-            <button><NuxtLink to="circle-description">Create Circle</NuxtLink></button>
-        
+          <button>
+            <NuxtLink to="circle-description">Create Circle</NuxtLink>
+          </button>
         </form>
         <!--  -->
         <div>
@@ -159,7 +158,7 @@
         </div>
       </div>
     </main>
-  </section>
+  </NuxtLayout>
 </template>
 
 <script></script>

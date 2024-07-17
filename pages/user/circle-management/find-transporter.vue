@@ -1,6 +1,5 @@
 <template>
-  <section class="wrapper">
-    <Navbar />
+  <NuxtLayout name="main">
     <main class="mt-5">
       <h2 class="weight-4 mb-5">Transporter Vehicles</h2>
 
@@ -232,7 +231,7 @@
         </div>
       </div>
     </main>
-  </section>
+  </NuxtLayout>
 </template>
 
 <script setup>

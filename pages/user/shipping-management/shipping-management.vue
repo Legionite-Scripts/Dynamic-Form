@@ -1,6 +1,5 @@
 <template>
-  <section class="wrapper">
-    <Navbar />
+  <NuxtLayout name="main">
     <main>
       <div class="bg mt-5 mb-4"></div>
 
@@ -35,10 +34,8 @@
         </div>
       </div>
 
-
-
-          <!-- Delivery -->
-          <div class="delivery">
+      <!-- Delivery -->
+      <div class="delivery">
         <h2 class="weight-4 mb-3">My Delivery</h2>
 
         <div>
@@ -46,7 +43,7 @@
         </div>
       </div>
     </main>
-  </section>
+  </NuxtLayout>
 </template>
 
 <script setup>
@@ -94,7 +91,6 @@ import shippingDelivery from "@/components/user/shipping-delivery.vue";
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
 }
-
 
 .delivery div {
   display: grid;

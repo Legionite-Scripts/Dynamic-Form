@@ -1,6 +1,5 @@
 <template>
-  <section>
-    <Navbar />
+  <NuxtLayout name="main">
     <main>
       <div class="bg mt-5 mb-4"></div>
 
@@ -72,7 +71,7 @@
         </form>
       </div>
     </main>
-  </section>
+  </NuxtLayout>
 </template>
 
 <script></script>

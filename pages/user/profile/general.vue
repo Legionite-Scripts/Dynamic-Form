@@ -1,6 +1,5 @@
 <template>
-  <section class="wrapper">
-    <Navbar />
+  <NuxtLayout name="main">
     <main class="container mt-5">
       <div class="flexed-row center mb-4">
         <h2 class="weight-5">My Profile</h2>
@@ -39,7 +38,7 @@
         </div>
       </div>
     </main>
-  </section>
+  </NuxtLayout>
 </template>
 
 <script setup>
@@ -91,7 +90,6 @@ main > .profile-main {
   border: 0.5px solid rgba(0, 0, 0, 0.1);
   padding: 8px 16px;
   background: none;
-
 }
 .product-catalogue > div {
   display: grid;

@@ -1,7 +1,5 @@
 <template>
-  <section class="wrapper">
-    <Navbar />
-
+  <NuxtLayout name="main">
     <main>
       <h2 class="mt-5 mb-3 weight-5">Accept/Reject Request</h2>
 
@@ -42,7 +40,7 @@
         </div>
       </div>
     </main>
-  </section>
+  </NuxtLayout>
 </template>
 
 <script></script>

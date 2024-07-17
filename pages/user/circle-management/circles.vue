@@ -1,6 +1,5 @@
 <template>
-  <section class="wrapper">
-    <Navbar />
+  <NuxtLayout name="main">
     <main class="container">
       <!--  -->
 
@@ -30,7 +29,7 @@
       </div>
       <!--  -->
     </main>
-  </section>
+  </NuxtLayout>
 </template>
 
 <script setup>

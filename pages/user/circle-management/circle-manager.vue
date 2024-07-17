@@ -1,6 +1,5 @@
 <template>
-  <section class="wrapper">
-    <Navbar />
+  <NuxtLayout name="main">
     <main class="mt-5">
       <div class="bg mb-3"></div>
       <!--  -->
@@ -39,9 +38,9 @@
             <h3 class="mb-1 weight-5">Merchant Actions</h3>
             <hr class="mb-2" />
             <div class="flexed-row">
-            <NuxtLink class="link" to="/user/circle-management/circle-chat">
-              <button>Chatroom</button>
-            </NuxtLink>
+              <NuxtLink class="link" to="/user/circle-management/circle-chat">
+                <button>Chatroom</button>
+              </NuxtLink>
               <button>Add packages</button>
             </div>
           </div>
@@ -155,7 +154,7 @@
         </form>
       </div>
     </main>
-  </section>
+  </NuxtLayout>
 </template>
 
 <script></script>
@@ -214,14 +213,14 @@
 .circle-admin > .admin-actions > div {
   gap: 12px !important;
 }
-.link{
+.link {
   width: 50%;
 }
 .circle-admin > .merchant-actions > div button,
 .circle-admin > .admin-actions > div > button {
   width: 50%;
 }
-.circle-admin > .merchant-actions > div > .link > button:first-child{
+.circle-admin > .merchant-actions > div > .link > button:first-child {
   width: 100%;
 }
 .circle-admin > .merchant-actions > div > .link > button:first-child,

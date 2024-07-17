@@ -1,5 +1,5 @@
 <template>
-  <shippingManagement />
+    <shippingManagement />
 </template>
 
 <script>

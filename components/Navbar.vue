@@ -1,9 +1,15 @@
 <template>
   <nav>
     <main class="pt-2 pb-2 flexed-row center">
-      <nuxt-link to="/">
-        <h2 class="weight-5">Zukonu</h2>
-      </nuxt-link>
+      <div class="flexed-row center">
+        <button class="sidebar-toggle" @click="toggleSidebar">
+          <img src="@/assets/icons/nav-icon.svg" alt="" />
+        </button>
+
+        <nuxt-link to="/">
+          <h2 class="weight-5">Zukonu</h2>
+        </nuxt-link>
+      </div>
       <nuxt-link to="/user/profile">
         <img
           src="@/assets/images/general/hero.png"
@@ -15,11 +21,11 @@
   </nav>
 </template>
 
-<script>
-export default {};
-</script>
 
 <style scoped>
+
+
+
 nav {
   margin: 0 auto;
   background: #121212;
@@ -42,5 +48,11 @@ main {
 
 nav > main img {
   height: 3em;
+}
+main div {
+  gap: 10px;
+}
+button {
+  background: none;
 }
 </style>

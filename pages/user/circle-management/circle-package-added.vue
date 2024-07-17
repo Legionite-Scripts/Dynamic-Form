@@ -1,6 +1,5 @@
 <template>
-  <section class="wrapper">
-    <Navbar />
+  <NuxtLayout name="main">
     <main class="mt-5">
       <div class="bg mb-3"></div>
       <!--  -->
@@ -46,7 +45,7 @@
         </form>
       </div>
     </main>
-  </section>
+  </NuxtLayout>
 </template>
 
 <script></script>
@@ -93,14 +92,19 @@ form {
 .form-bg {
   height: 20em;
   border-radius: 4px;
-  background: linear-gradient(0deg, rgba(209, 209, 209, 0.20) 0%, rgba(209, 209, 209, 0.20) 100%), #E3E3E3;
+  background: linear-gradient(
+      0deg,
+      rgba(209, 209, 209, 0.2) 0%,
+      rgba(209, 209, 209, 0.2) 100%
+    ),
+    #e3e3e3;
   justify-content: space-between;
   padding: 10px 23.444px;
 }
-.form-bg p{
-    color: #fff;
+.form-bg p {
+  color: #fff;
 }
-.form-bg h1{
-    color: #c9c8c8;
+.form-bg h1 {
+  color: #c9c8c8;
 }
 </style>

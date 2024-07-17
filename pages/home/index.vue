@@ -1,17 +1,15 @@
 <template>
-    <home/>
+    <home />
 </template>
 
 <script>
-import home from "./home.vue"
+import home from "./home.vue";
 
 export default {
-    components:{
-        home
-    }
-}
+  components: {
+    home,
+  },
+};
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>
