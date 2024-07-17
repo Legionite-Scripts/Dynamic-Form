@@ -6,11 +6,11 @@
       </button>
 
       <div class="container mt-5">
-        <div class="hero flexed-row mb-3">
+        <div class="hero center flexed-row mb-3">
           <img src="@/assets/images/general/hero.png" alt="Hero" class="border-round" />
 
           <div>
-            <h3 class="weight-5">Lorem Ipsum Founder</h3>
+            <h4 class="weight-5">Lorem Ipsum Founder</h4>
             <p class="weight-4">loremupsum@hotmail.com</p>
           </div>
         </div>
@@ -91,7 +91,7 @@ const closeSidebar = () => {
   height: 100%;
   transition: left 0.3s ease;
   z-index: 1000;
-  padding: 42px 16px;
+
   border-right: 1px solid rgba(0, 0, 0, 0.1);
   background: #f2f2f2;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.03);
@@ -105,6 +105,9 @@ const closeSidebar = () => {
     left: -100%;
     width: 100% !important;
   }
+}
+.sidebar-content{
+  padding: 42px 16px !important;
 }
 .sidebar--open {
   left: 0;
@@ -121,10 +124,14 @@ const closeSidebar = () => {
   gap: 8px;
 }
 .hero {
-  gap: 14px;
+  gap: 10px;
+}
+.hero p{
+  font-size: 12px !important;
 }
 .hero img {
   width: 3em;
+  height: 3em;
 }
 .sidebar-link .inner {
   width: 100% !important;
