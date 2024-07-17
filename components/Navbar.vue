@@ -2,7 +2,7 @@
   <nav>
     <main class="pt-2 pb-2 flexed-row center">
       <div class="flexed-row center">
-        <button class="sidebar-toggle" @click="toggleSidebar">
+        <button @click="openSidebar" class="navbar__button">
           <img src="@/assets/icons/nav-icon.svg" alt="" />
         </button>
 
@@ -21,11 +21,17 @@
   </nav>
 </template>
 
+<script setup>
+import { defineEmits } from "vue";
+
+const emit = defineEmits(["open"]);
+
+const openSidebar = () => {
+  emit("open");
+};
+</script>
 
 <style scoped>
-
-
-
 nav {
   margin: 0 auto;
   background: #121212;

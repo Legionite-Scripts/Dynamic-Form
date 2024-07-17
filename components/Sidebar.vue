@@ -1,41 +1,159 @@
-    <template>
-      <div class="sidebar">
-        <button class="close-btn" @click="handleClose">
-          close
-        </button>
-        <slot />
+<template>
+  <div
+    :class="['sidebar', { 'sidebar--open': isOpen }]"
+    @click.self="closeSidebar"
+  >
+    <div class="sidebar-content">
+      <button @click="closeSidebar" class="sidebar__close-button">
+        <img src="@/assets/icons/Layout/hamburger-menu.svg" alt="Hamburger" />
+      </button>
+
+      <div class="container mt-5">
+        <div class="hero flexed-row mb-3">
+          <img
+            src="@/assets/images/general/hero.png"
+            alt="Hero"
+            class="border-round"
+          />
+
+          <div>
+            <h3 class="weight-5">Lorem Ipsum Founder</h3>
+            <p class="weight-4">loremupsum@hotmail.com</p>
+          </div>
+        </div>
+        <!--  -->
+        <NuxtLink class="sidebar-link" to="/user">
+          <div class="inner">
+            <img
+              src="@/assets/icons/Layout/home-outline.svg"
+              alt="Home Outline"
+            />
+            <p class="weight-4">Home</p>
+          </div>
+        </NuxtLink>
+        <!--  -->
+        <NuxtLink class="sidebar-link" to="/user/profile">
+          <div class="inner">
+            <img
+              src="@/assets/icons/Layout/profile.svg"
+              alt="Profile Outline"
+            />
+            <p class="weight-4">My Profile</p>
+          </div>
+        </NuxtLink>
+        <!--  -->
+        <NuxtLink class="sidebar-link" to="/user/circle-management/circles">
+          <div class="inner">
+            <img src="@/assets/icons/Layout/videos.svg" alt="Videos Outline" />
+            <p class="weight-4">Circle</p>
+          </div>
+        </NuxtLink>
+        <!--  -->
+        <NuxtLink class="sidebar-link" to="/user/shipping-management">
+          <div class="inner">
+            <img src="@/assets/icons/Layout/note.svg" alt="Note Outline" />
+            <p class="weight-4">Shipping Management</p>
+          </div>
+        </NuxtLink>
+        <!--  -->
+        <NuxtLink class="sidebar-link" to="/user/address-management">
+          <div class="inner">
+            <img src="@/assets/icons/Layout/address.svg" alt="Note Outline" />
+            <p class="weight-4">Address Management</p>
+          </div>
+        </NuxtLink>
+
+        <!--  -->
+        <NuxtLink class="sidebar-link" to="/user">
+          <div class="inner">
+            <img
+              src="@/assets/icons/Layout/settings.svg"
+              alt="Settings Outline"
+            />
+            <p class="weight-4">Settings</p>
+          </div>
+        </NuxtLink>
       </div>
-    </template>
+    </div>
+  </div>
+</template>
 
-  <script>
-  export default {
-    methods: {
-      handleClose() {
-        this.$el.style.left = '-100%';
-      }
-    }
-  };
-  </script>
+<script setup>
+import { defineProps, defineEmits } from "vue";
 
-  <style scoped>
-  .sidebar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 250px;
-    height: 100vh;
-    background-color: #fff;
-    transition: all 0.3s ease-in-out;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
-    z-index: 10;
+const props = defineProps({
+  isOpen: {
+    type: Boolean,
+    required: true,
+  },
+});
+
+const emit = defineEmits(["close"]);
+
+const closeSidebar = () => {
+  emit("close");
+};
+</script>
+
+<style scoped>
+* {
+  color: #121212 !important;
+}
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -20vw;
+  width: 20vw;
+  height: 100%;
+  transition: left 0.3s ease;
+  z-index: 1000;
+  padding: 42px 16px;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  background: #f2f2f2;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.03);
+
+  @media (width<1000px) {
+    left: -100%;
+    width: fit-content !important;
   }
-  .close-btn {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    border: none;
-    background: transparent;
-    cursor: pointer;
-    border: 1px solid #333;
+
+  @media (width<768px) {
+    left: -100%;
+    width: 100% !important;
   }
-  </style>
+}
+.sidebar--open {
+  left: 0;
+}
+.sidebar__close-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+}
+.hero {
+  gap: 14px;
+}
+.hero img {
+  width: 3em;
+}
+.sidebar-link .inner {
+  width: 100% !important;
+  display: grid;
+  grid-template-columns: 1fr 100%;
+  gap: 12px;
+  padding: 12px 16px;
+}
+.sidebar p {
+  color: #3e3e3e;
+}
+.sidebar-link:last-child {
+  position: fixed !important;
+  bottom: 0;
+  margin-bottom: 1em;
+}
+</style>
