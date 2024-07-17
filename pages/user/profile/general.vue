@@ -25,7 +25,7 @@
           </p>
 
           <div class="flexed-row">
-            <button>Chat Merchant</button>
+            <button><NuxtLink to="/user/circle-management/circle-chat">Chat Merchant</NuxtLink></button>
             <button>Dial Number</button>
           </div>
         </div>

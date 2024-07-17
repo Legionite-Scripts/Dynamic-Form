@@ -46,7 +46,11 @@
                   <p class="weight-4 location">Accra, Ghana</p>
                 </div>
 
-                <button class="add-transporter">Use Transport Service</button>
+                <button class="add-transporter">
+                  <NuxtLink to="open-transporter-conversation"
+                    >Use Transport Service</NuxtLink
+                  >
+                </button>
               </div>
             </div>
           </div>

@@ -26,7 +26,7 @@
           </p>
 
           <div class="flexed-row">
-            <button>Update Profile</button>
+            <button><NuxtLink to="/user/profile/general">Update Profile</NuxtLink></button>
             <button>Delete Account</button>
           </div>
         </div>

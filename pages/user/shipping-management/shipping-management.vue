@@ -7,8 +7,12 @@
         <h2 class="weight-4">Shipping Management</h2>
 
         <div class="flexed-row">
-          <button>Create Package</button>
-          <button>Create Product</button>
+          <button class="add-transporter">
+            <NuxtLink to="/user/shipping-management/create-product">Create Package</NuxtLink>
+          </button>
+          <button class="add-transporter">
+            <NuxtLink to="/user/shipping-management/create-product">Create Product</NuxtLink>
+          </button>
         </div>
       </div>
       <p class="weight-4 mb-5">

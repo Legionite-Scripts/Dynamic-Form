@@ -38,7 +38,7 @@
       </div>
     </div>
 
-    <button class="weight-5">Edit Package</button>
+    <button class="weight-5"><NuxtLink to="/user/shipping-management/edit-package">Edit Package</NuxtLink></button>
   </form>
 </template>
 

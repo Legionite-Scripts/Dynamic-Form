@@ -8,8 +8,16 @@
         </p>
 
         <div class="flexed-row">
-          <button>Create Circle</button>
-          <button>Find Circle</button>
+          <button>
+            <NuxtLink to="/user/circle-management/create-circle"
+              >Create Circle</NuxtLink
+            >
+          </button>
+          <button>
+            <NuxtLink to="/user/circle-management/circles"
+              >Find Circle</NuxtLink
+            >
+          </button>
         </div>
       </div>
 

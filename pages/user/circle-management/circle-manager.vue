@@ -3,11 +3,6 @@
     <main class="mt-5">
       <div class="bg mb-3"></div>
       <!--  -->
-      <h2 class="weight-4 mb-1">Create Circle</h2>
-      <p class="weight-4 mb-4">
-        Lorem ipsum dolor sit amet consectetur. Enim faucibus nunc erat ac. Ut
-        duis.
-      </p>
 
       <div class="content mb-5">
         <!--  -->
@@ -38,10 +33,17 @@
             <h3 class="mb-1 weight-5">Merchant Actions</h3>
             <hr class="mb-2" />
             <div class="flexed-row">
-              <NuxtLink class="link" to="/user/circle-management/circle-chat">
-                <button>Chatroom</button>
-              </NuxtLink>
-              <button>Add packages</button>
+              <button>
+                <NuxtLink to="/user/circle-management/circle-chat"
+                  >Chatroom</NuxtLink
+                >
+              </button>
+
+              <button>
+                <NuxtLink to="/user/circle-management/circle-package-added"
+                  >Add Package</NuxtLink
+                >
+              </button>
             </div>
           </div>
 
@@ -49,7 +51,7 @@
             <h3 class="mb-1 weight-5">Admin Actions</h3>
             <hr class="mb-2" />
             <div class="flexed-row">
-              <button>Approve Requests</button>
+              <button><NuxtLink to="/user/circle-management/circle-request-approved">Approve Requests</NuxtLink></button>
               <button>Delete Circle</button>
             </div>
           </div>
@@ -213,15 +215,14 @@
 .circle-admin > .admin-actions > div {
   gap: 12px !important;
 }
-.link {
-  width: 50%;
-}
+
 .circle-admin > .merchant-actions > div button,
 .circle-admin > .admin-actions > div > button {
   width: 50%;
 }
-.circle-admin > .merchant-actions > div > .link > button:first-child {
-  width: 100%;
+.circle-admin > .merchant-actions > div > button:first-child {
+  background: #2e77ce;
+  color: #fff;
 }
 .circle-admin > .merchant-actions > div > .link > button:first-child,
 .circle-admin > .admin-actions > div > button:first-child {

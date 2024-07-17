@@ -22,7 +22,7 @@
               <p class="mb-4 weight-4">Transporter Not Selected</p>
 
               <button class="add-transporter flexed-row">
-                Add Transporter To Circle
+               <NuxtLink to="find-transporter">Add Transporter To Circle</NuxtLink>
               </button>
             </div>
           </div>

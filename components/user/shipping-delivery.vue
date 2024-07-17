@@ -9,7 +9,7 @@
       <p class="weight-4">Lagos Nigeria - Accra Ghana</p>
     </div>
 
-    <button class="weight-5">Edit Products</button>
+    <button class="weight-5"><NuxtLink to="/user/shipping-management/edit-product">Edit Products</NuxtLink></button>
   </section>
 </template>
 
