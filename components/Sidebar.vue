@@ -1,20 +1,13 @@
 <template>
-  <div
-    :class="['sidebar', { 'sidebar--open': isOpen }]"
-    @click.self="closeSidebar"
-  >
-    <div class="sidebar-content">
-      <button @click="closeSidebar" class="sidebar__close-button">
-        <img src="@/assets/icons/Layout/hamburger-menu.svg" alt="Hamburger" />
+  <div :class="['sidebar', { 'sidebar--open': isOpen }]" @click.self="closeSidebar">
+    <div class="sidebar-content flexed-column">
+      <button @click="closeSidebar" class="sidebar__close-button right">
+        <img src="@/assets/icons/Layout/close-icon.svg" alt="Hamburger" />
       </button>
 
       <div class="container mt-5">
         <div class="hero flexed-row mb-3">
-          <img
-            src="@/assets/images/general/hero.png"
-            alt="Hero"
-            class="border-round"
-          />
+          <img src="@/assets/images/general/hero.png" alt="Hero" class="border-round" />
 
           <div>
             <h3 class="weight-5">Lorem Ipsum Founder</h3>
@@ -24,20 +17,14 @@
         <!--  -->
         <NuxtLink class="sidebar-link" to="/user">
           <div class="inner">
-            <img
-              src="@/assets/icons/Layout/home-outline.svg"
-              alt="Home Outline"
-            />
+            <img src="@/assets/icons/Layout/home-outline.svg" alt="Home Outline" />
             <p class="weight-4">Home</p>
           </div>
         </NuxtLink>
         <!--  -->
         <NuxtLink class="sidebar-link" to="/user/profile">
           <div class="inner">
-            <img
-              src="@/assets/icons/Layout/profile.svg"
-              alt="Profile Outline"
-            />
+            <img src="@/assets/icons/Layout/profile.svg" alt="Profile Outline" />
             <p class="weight-4">My Profile</p>
           </div>
         </NuxtLink>
@@ -66,10 +53,7 @@
         <!--  -->
         <NuxtLink class="sidebar-link" to="/user">
           <div class="inner">
-            <img
-              src="@/assets/icons/Layout/settings.svg"
-              alt="Settings Outline"
-            />
+            <img src="@/assets/icons/Layout/settings.svg" alt="Settings Outline" />
             <p class="weight-4">Settings</p>
           </div>
         </NuxtLink>
@@ -129,6 +113,7 @@ const closeSidebar = () => {
   background: none;
   border: none;
   cursor: pointer;
+  align-self: right;
 }
 .container {
   display: grid;
