@@ -55,42 +55,44 @@ section.wrapper {
 /*  */
 .bg {
   border-radius: 8px;
-  background: linear-gradient(
-      0deg,
+  background: linear-gradient(0deg,
       rgba(0, 0, 0, 0.5) 0%,
-      rgba(0, 0, 0, 0.5) 100%
-    ),
-    url("@/assets/images/User-Dashboard/circle-management-bg.jpeg") lightgray
-      50% / cover no-repeat;
+      rgba(0, 0, 0, 0.5) 100%),
+    url("@/assets/images/User-Dashboard/circle-management-bg.jpeg") lightgray 50% / cover no-repeat;
   background-size: cover;
   height: 15em;
 }
 
-.bg > h2 {
+.bg>h2 {
   color: #fffefe;
 }
 
 .buttons {
   gap: 8px;
   flex-wrap: wrap;
+
   @media (width<768px) {
     justify-content: flex-start;
     gap: 20px;
   }
 }
-.buttons > button {
+
+.buttons>button {
   padding: 8px 16px;
   border-radius: 2px;
   background: #fff;
 }
+
 .buttons button:last-child {
   background: #121212;
   color: #fff;
 }
-.circles > div {
+
+.circles>div {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 32px;
+
   @media (max-width: 1400px) {
     grid-template-columns: repeat(3, 1fr);
   }
