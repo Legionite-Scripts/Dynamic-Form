@@ -96,7 +96,7 @@ const closeSidebar = () => {
   background: #f2f2f2;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.03);
 
-  @media (width<1000px) {
+  @media (width<1200px) {
     left: -100%;
     width: fit-content !important;
   }

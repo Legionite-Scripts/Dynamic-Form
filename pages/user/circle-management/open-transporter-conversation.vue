@@ -242,11 +242,7 @@
   background: #fff;
   box-shadow: 0px 6.327px 12.655px 0px rgba(0, 0, 0, 0.04);
   padding: 32px;
-}
-
-.circle-admin > .top-admin {
   gap: 32px;
-
   @media (max-width: 1000px) {
     flex-wrap: wrap;
   }

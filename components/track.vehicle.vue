@@ -54,9 +54,12 @@
 section {
   border-radius: 4px;
   background: #fff !important;
+  display: grid;
+  grid-template-columns: 1fr;
+  width: fit-content !important
 }
 section > img {
-  width: 2em;
+  width: 2em !important;
 }
 section > div {
   justify-content: space-between;
