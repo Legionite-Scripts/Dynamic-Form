@@ -2,7 +2,7 @@
   <nav>
     <main class="pt-2 pb-2 flexed-row center">
       <div class="flexed-row center">
-        <button @click="openSidebar" class="navbar__button">
+        <button @click="openSidebar" class="navbar__button center">
           <img src="@/assets/icons/nav-icon.svg" alt="" />
         </button>
 

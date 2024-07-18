@@ -8,7 +8,11 @@
       <div class="btns mb-2">
         <h2 class="weight-5">Overview</h2>
 
-        <button>Create New Vehicle</button>
+       <button>
+            <NuxtLink to="/transporter/fleet-management/create-vehicle"
+              >Create New Vehicle</NuxtLink
+            >
+          </button>
       </div>
       <hr class="mb-2" />
 
@@ -19,7 +23,11 @@
             Registered Vehicles
           </p>
           <h1 class="weight-4 mb-2">10</h1>
-          <button>Vehicle Management</button>
+          <button>
+            <NuxtLink to="/transporter/fleet-management/"
+              >Vehicle Management</NuxtLink
+            >
+          </button>
         </div>
 
         <!--  -->
@@ -29,7 +37,11 @@
             Active Circles
           </p>
           <h1 class="weight-4 mb-2">3</h1>
-          <button>View Circle Requests</button>
+          <button>
+            <NuxtLink to="/transporter/circle-requests/circle-requests"
+              >View Circle Requests </NuxtLink
+            >
+          </button>
         </div>
         <!--  -->
       </div>

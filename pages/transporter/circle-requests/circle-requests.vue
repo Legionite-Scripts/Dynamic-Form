@@ -9,9 +9,17 @@
         <h2 class="weight-5">Circle Requests</h2>
 
         <div>
-          <button>Create Vehicle</button>
+          <button>
+            <NuxtLink to="/transporter/fleet-management/create-vehicle"
+              >Create Vehicle</NuxtLink
+            >
+          </button>
 
-          <button>Circle Requests</button>
+          <button>
+            <NuxtLink to="/transporter/circle-requests"
+              >Circle Requests</NuxtLink
+            >
+          </button>
         </div>
       </div>
       <hr class="mb-2" />

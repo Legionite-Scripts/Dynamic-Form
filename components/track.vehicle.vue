@@ -44,7 +44,7 @@
       bibendum. Id morbi eu lacus sit accumsan eget tristique pretium feugiat.
     </p>
 
-    <button class="p-1 weight-5">Track Vehicle Location</button>
+    <button class="p-1 weight-5"><NuxtLink to="/transporter/fleet-management/track-vehicle">Track Vehicle Location</NuxtLink></button>
   </section>
 </template>
 

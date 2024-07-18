@@ -24,7 +24,7 @@
   
         
             <button>
-              <NuxtLink to="circle-description">Invite Member   </NuxtLink>
+              <NuxtLink to="circle-description">Invite Member</NuxtLink>
             </button>
           </form>
           <!--  -->
