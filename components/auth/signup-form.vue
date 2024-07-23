@@ -75,20 +75,18 @@
     <p>-OR-</p>
     <p>
       Already have an account?
-      <NuxtLink to="/auth/login">
-        <a href="#" class="weight-7">Sign In</a></NuxtLink
-      >
+      <a href="#" class="weight-7">Sign In</a>
     </p>
 
-      <ToastNotification
-        v-for="(toast, index) in toasts"
-        :key="index"
-        :type="toast.type"
-        :title="toast.title"
-        :description="toast.description"
-        :timer="toast.timer"
-        @close="removeToast(index)"
-      />
+    <ToastNotification
+      v-for="(toast, index) in toasts"
+      :key="index"
+      :type="toast.type"
+      :title="toast.title"
+      :description="toast.description"
+      :timer="toast.timer"
+      @close="removeToast(index)"
+    />
   </form>
 </template>
 
@@ -99,7 +97,7 @@ import ToastNotification from "@/components/toastNotification.vue";
 const toasts = ref([]); //Empty Array for toast notifications
 
 const showToast = (type, title, description) => {
-  toasts.value.push({ type, title, description, timer: 5000 }); //Showtoast Method
+  toasts.value.push({ type, title, description, timer: 5000 }); //Show toast Method
 };
 
 const removeToast = (index) => {
@@ -145,9 +143,6 @@ const handleSignup = async () => {
     const data = await response.json();
     console.log("Success:", data);
     showToast("success", "Signup Successful", `${data.message}`);
-
-    // Redirect to the login page after successful signup
-    // router.push("/login");
   } catch (err) {
     console.error("Unexpected error:", err);
   }

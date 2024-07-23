@@ -1,13 +1,13 @@
 <template>
-    <home/>
+    <auth/>
 </template>
 
 <script>
-import home from "./home"
+import auth from "./auth"
 
 export default{
     components:{
-        home,
+        auth,
     }
 }
 </script>

@@ -1,5 +1,5 @@
 <template>
-    <form class="p-4 flexed-column center" @submit.prevent="handleLogin">
+  <form class="p-4 flexed-column center" @submit.prevent="handleLogin">
     <h2 class="mb-3">Sign In</h2>
     <div class="flexed-column mb-1 fields">
       <label for="email" class="left flexed-row mb-1"
@@ -26,61 +26,74 @@
         required
       />
 
-      <NuxtLink to="/auth/signup" class="nuxt-link">
-        <a href="#" class="right mb-2">Forgot Password?</a>
-      </NuxtLink>
+      <a href="#" class="right mb-2">Forgot Password?</a>
     </div>
 
     <button class="p-2 mb-2" type="submit">Sign In</button>
     <p class="mb-2">-OR-</p>
     <p>
       Don't have an account?
-      <NuxtLink to="signup" class="nuxt-link"> <a href="#" class="weight-7">Sign Up</a></NuxtLink>
+      <a href="#" class="weight-7">Sign Up</a>
     </p>
+
+    <ToastNotification
+      v-for="(toast, index) in toasts"
+      :key="index"
+      :type="toast.type"
+      :title="toast.title"
+      :description="toast.description"
+      :timer="toast.timer"
+      @close="removeToast(index)"
+    />
   </form>
 </template>
 
 <script setup>
 import { ref } from "vue";
+import ToastNotification from "@/components/toastNotification.vue";
+
+const toasts = ref([]); //Empty Array for toast notifications
+
+const showToast = (type, title, description) => {
+  toasts.value.push({ type, title, description, timer: 5000 }); //Show toast Method
+};
+
+const removeToast = (index) => {
+  toasts.value.splice(index, 1); //Remove toast method
+};
 
 const email = ref("");
 const password = ref("");
 
 const handleLogin = async () => {
-  // try {
-  //   const response = await fetch("https://api.zukonu.xyz/api/v1/auth/login", {
-  //     method: "POST",
-  //     headers: {
-  //       "Content-Type": "application/json",
-  //     },
-  //     body: JSON.stringify({
-  //       email: email.value,
-  //       password: password.value,
-  //     }),
-  //   });
+  try {
+    const response = await fetch("https://api.zukonu.xyz/api/v1/auth/login", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        email: email.value,
+        password: password.value,
+      }),
+    });
 
-  //   if (!response.ok) {
-  //     const errorData = await response.json();
-  //     console.error("Error:", errorData);
+    if (!response.ok) {
+      const errorData = await response.json();
+      console.error("Error:", errorData);
+      showToast("error", "Error", `${errorData.message}`);
 
-  //     return;
-  //   }
+      return;
+    }
 
-  //   const data = await response.json();
-  //   console.log("Success:", data);
+    const data = await response.json();
+    console.log("Success:", data);
+    showToast("success", "Signup Successful", `${data.message}`);
+  } catch (err) {
+    console.error("Unexpected error:", err);
+  }
 
-  //   // Save email and password to Pinia Store
-  //   authStore.setEmail(email.value);
-  //   authStore.setPassword(password.value);
-
-  //   // Redirect to the Dashboard after successful Login
-  //   // router.push("/Dashboard");
-  // } catch (err) {
-  //   console.error("Unexpected error:", err);
-  // }
-
-  window.location.href = '/user';
-
+  window.location.href = "/user";
 };
 </script>
 <style scoped>
@@ -105,7 +118,7 @@ label {
 label > span {
   color: #fe4a23;
 }
-form > div > a * {
+form > div > a  {
   color: #fe4a23;
 }
 input {

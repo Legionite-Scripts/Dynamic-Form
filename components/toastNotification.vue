@@ -18,23 +18,23 @@
 
 <script setup>
 import { ref, onMounted, watch, onBeforeUnmount } from "vue";
-// import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
-// import { library } from "@fortawesome/fontawesome-svg-core";
-// import {
-//   faCheckCircle,
-//   faExclamationCircle,
-//   faTimesCircle,
-//   faInfoCircle,
-//   faTimes,
-// } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import {
+  faCheckCircle,
+  faExclamationCircle,
+  faTimesCircle,
+  faInfoCircle,
+  faTimes,
+} from "@fortawesome/free-solid-svg-icons";
 
-// library.add(
-//   faCheckCircle,
-//   faExclamationCircle,
-//   faTimesCircle,
-//   faInfoCircle,
-//   faTimes
-// );
+library.add(
+  faCheckCircle,
+  faExclamationCircle,
+  faTimesCircle,
+  faInfoCircle,
+  faTimes
+);
 
 const props = defineProps({
   type: {
@@ -103,6 +103,10 @@ const closeToast = () => {
 
 onMounted(startTimer);
 onBeforeUnmount(() => clearInterval(timerInterval));
+
+
+
+
 </script>
 
 <style scoped>
@@ -118,7 +122,7 @@ onBeforeUnmount(() => clearInterval(timerInterval));
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   transition: opacity 0.3s ease, transform 0.3s ease;
 
-  @media(width<1000px) {
+  @media (width<1000px) {
     width: 40% !important;
   }
 }
