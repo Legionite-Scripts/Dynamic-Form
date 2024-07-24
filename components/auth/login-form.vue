@@ -88,6 +88,7 @@ const handleLogin = async () => {
 
     const data = await response.json();
     console.log("Success:", data);
+    console.log(data.access_token)
     showToast("success", "Signup Successful", `${data.message}`);
   } catch (err) {
     console.error("Unexpected error:", err);

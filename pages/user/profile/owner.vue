@@ -26,7 +26,9 @@
           </p>
 
           <div class="flexed-row">
-            <button><NuxtLink to="/user/profile/general">Update Profile</NuxtLink></button>
+            <button @click="openModal">
+            Update Profile
+            </button>
             <button>Delete Account</button>
           </div>
         </div>
@@ -38,12 +40,26 @@
           <product-catalogue v-for="n in 10" :key="n" />
         </div>
       </div>
+      <modalForm :show="showModal" @close="closeModal" />
     </main>
   </NuxtLayout>
 </template>
 
 <script setup>
 import productCatalogue from "@/components/user/product-catalogue.vue";
+import modalForm from '@/components/user/modalForm.vue'
+
+import { ref } from 'vue'
+  
+  const showModal = ref(false)
+  
+  const openModal = () => {
+    showModal.value = true
+  }
+  
+  const closeModal = () => {
+    showModal.value = false
+  }
 </script>
 
 <style scoped>
