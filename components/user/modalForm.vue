@@ -104,7 +104,7 @@ const submitForm = async () => {
         method: "POST",
         body: formData,
         headers: {
-          Authorization: `Bearer ${access_token}`, // Include the access token here
+          Authorization: `Bearer ${access_token}`, // Access token for user
         },
       }
     );
@@ -115,7 +115,8 @@ const submitForm = async () => {
     } else {
       console.log("Form submitted successfully:", data.value);
       showToast("success", "Profile Updated Successfully", "");
-      setTimeout(() => close(), 5000); //Set Delay of 5s before popup closes
+      setTimeout(() => close(), 5000); //Set Delay of 5s before Modal Popup closes
+      setTimeout(() => removeToast(), 5000); // Remove Toast Notification after 5s
     }
   } catch (err) {
     console.error("Error submitting form:", err);
@@ -127,13 +128,9 @@ const submitForm = async () => {
   }
 };
 console.log("Done");
-// close();
 </script>
 
 <style scoped>
-* {
-  /* background: none !important; */
-}
 .modal-overlay {
   position: fixed;
   top: 0;

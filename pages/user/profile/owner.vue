@@ -26,9 +26,7 @@
           </p>
 
           <div class="flexed-row">
-            <button @click="openModal">
-            Update Profile
-            </button>
+            <button @click="openModal">Update Profile</button>
             <button>Delete Account</button>
           </div>
         </div>
@@ -47,19 +45,19 @@
 
 <script setup>
 import productCatalogue from "@/components/user/product-catalogue.vue";
-import modalForm from '@/components/user/modalForm.vue'
+import modalForm from "@/components/user/modalForm.vue";
 
-import { ref } from 'vue'
-  
-  const showModal = ref(false)
-  
-  const openModal = () => {
-    showModal.value = true
-  }
-  
-  const closeModal = () => {
-    showModal.value = false
-  }
+import { ref } from "vue";
+
+const showModal = ref(false);
+
+const openModal = () => {
+  showModal.value = true;
+};
+
+const closeModal = () => {
+  showModal.value = false;
+};
 </script>
 
 <style scoped>
@@ -123,18 +121,7 @@ main > .profile-main {
 }
 .product-catalogue > div {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 32px;
-  @media (max-width: 1200px) {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  @media (max-width: 900px) {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  @media (max-width: 600px) {
-    grid-template-columns: repeat(1, 1fr);
-  }
 }
 </style>
