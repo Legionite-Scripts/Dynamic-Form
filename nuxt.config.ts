@@ -5,5 +5,5 @@ export default defineNuxtConfig({
   css: ["~/assets/css/main.css"],
   ssr: false,
   modules: ["@pinia/nuxt"],
-  plugins: [{ src: "~/plugins/toast.js", mode: "client" }],
+  // plugins: [{ src: "~/plugins/toast.js", mode: "client" }],
 });

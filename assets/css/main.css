@@ -200,7 +200,9 @@
   flex-direction: column;
 }
 
-.flexed-column > * {width: 100% !important}
+.flexed-column > * {
+  width: 100% !important;
+}
 
 .flexed-column select {
   min-width: 300px;
@@ -226,7 +228,6 @@ main {
   }
 }
 
-
 .chat-container {
   border-radius: 8px;
   background: #fafafa;
@@ -237,10 +238,10 @@ main {
   height: fit-content !important;
 }
 
-.nuxt-link{
+.nuxt-link {
   all: unset !important;
 }
 
-.NuxtLink{
-  all: unset !important
+.NuxtLink {
+  all: unset !important;
 }

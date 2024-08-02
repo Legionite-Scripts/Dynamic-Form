@@ -1,13 +1,13 @@
 <template>
-    <auth/>
+    <formSlide/>
 </template>
 
 <script>
-import auth from "./auth"
+import formSlide from "./formSlide.vue"
 
 export default{
     components:{
-        auth,
+        formSlide,
     }
 }
 </script>
